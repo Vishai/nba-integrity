@@ -7,6 +7,7 @@ Includes:
 """
 
 import sys
+import os
 import json
 from pathlib import Path
 
@@ -18,6 +19,7 @@ import pandas as pd
 import numpy as np
 
 from tii.config import get_all_cases, CLASSIFICATIONS
+from tii.case_prefs import is_pinned, is_hidden, set_pref
 
 # Try SQLite cache first (local dev), fall back to JSON exports (Streamlit Cloud)
 COMPUTED_DIR = Path(__file__).parent / "data" / "computed"
@@ -35,6 +37,10 @@ st.set_page_config(
 )
 
 st.title("🏀 Tanking Integrity Index — Calibration Dashboard")
+
+RUN_MODE = os.getenv("RUN_MODE", "local").strip().lower()
+IS_LOCAL_MODE = RUN_MODE == "local"
+IS_CLOUD_MODE = RUN_MODE == "cloud"
 
 # ══════════════════════════════════════════════════════════════════════════
 # HOW IT WORKS (expandable)
@@ -467,14 +473,21 @@ st.markdown("---")
 st.subheader("📊 All Cases — Live Scoring")
 
 # Filters (defaults keep the view small)
-all_case_ids = list(df["Case"].values)
 show_dynamic = st.checkbox("Include dynamic cases", value=True)
+show_only_pinned = st.checkbox("Show only pinned", value=False)
 max_rows = st.slider("Max rows", 5, 100, 15, 5)
 
 filtered_df = df.copy()
+
+# Hide cases explicitly hidden
+filtered_df = filtered_df[~filtered_df["Case"].apply(is_hidden)]
+
 if not show_dynamic:
     # Built-in cases are single-letter IDs (A-H)
     filtered_df = filtered_df[filtered_df["Case"].str.len() == 1]
+
+if show_only_pinned:
+    filtered_df = filtered_df[filtered_df["Case"].apply(is_pinned)]
 
 # Allow explicit selection (optional)
 selected_cases = st.multiselect(
@@ -484,6 +497,10 @@ selected_cases = st.multiselect(
 )
 if selected_cases:
     filtered_df = filtered_df[filtered_df["Case"].isin(selected_cases)]
+
+# Sort: pinned first, then by TII desc
+filtered_df = filtered_df.assign(_pinned=filtered_df["Case"].apply(is_pinned))
+filtered_df = filtered_df.sort_values(by=["_pinned", "TII"], ascending=[False, False]).drop(columns=["_pinned"])
 
 filtered_df = filtered_df.head(max_rows)
 
@@ -513,6 +530,17 @@ selected_case = st.selectbox(
 )
 
 if selected_case:
+    # Pin/hide controls
+    cpin1, cpin2, cpin3 = st.columns([1, 1, 6])
+    with cpin1:
+        if st.button("📌 Pin" if not is_pinned(selected_case) else "📍 Unpin"):
+            set_pref(selected_case, "pinned", not is_pinned(selected_case))
+            st.rerun()
+    with cpin2:
+        if st.button("🙈 Hide"):
+            set_pref(selected_case, "hidden", True)
+            st.rerun()
+
     d = all_data[selected_case]
     row = [r for r in rows if r["Case"] == selected_case][0]
     supp = d.get("supplemental", {})

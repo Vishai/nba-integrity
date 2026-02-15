@@ -10,6 +10,8 @@ build/
 data/tii_cache.db
 # Activity log is runtime-generated
 data/activity_log.jsonl
+# Case UI prefs
+data/case_prefs.json
 
 # Environment
 .env
