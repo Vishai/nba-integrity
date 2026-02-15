@@ -1,0 +1,633 @@
+{
+  "SAS": {
+    "qualified_players": [
+      {
+        "player_id": 1641718,
+        "player_name": "Keyonte George",
+        "avg_minutes": 31.5,
+        "avg_pts": 16.8,
+        "games_played": 67,
+        "games_missed": 15,
+        "total_missed": 15,
+        "absent_from_log": 15,
+        "dnp_count": 0,
+        "post_elim_missed": 5,
+        "pre_elim_missed": 10,
+        "loss_games_missed": 11,
+        "win_games_missed": 4
+      },
+      {
+        "player_id": 1628374,
+        "player_name": "Lauri Markkanen",
+        "avg_minutes": 31.4,
+        "avg_pts": 19.0,
+        "games_played": 47,
+        "games_missed": 35,
+        "total_missed": 35,
+        "absent_from_log": 35,
+        "dnp_count": 0,
+        "post_elim_missed": 21,
+        "pre_elim_missed": 14,
+        "loss_games_missed": 27,
+        "win_games_missed": 8
+      },
+      {
+        "player_id": 1628381,
+        "player_name": "John Collins",
+        "avg_minutes": 30.5,
+        "avg_pts": 18.9,
+        "games_played": 40,
+        "games_missed": 42,
+        "total_missed": 42,
+        "absent_from_log": 42,
+        "dnp_count": 0,
+        "post_elim_missed": 22,
+        "pre_elim_missed": 20,
+        "loss_games_missed": 37,
+        "win_games_missed": 5
+      },
+      {
+        "player_id": 1631117,
+        "player_name": "Walker Kessler",
+        "avg_minutes": 30.0,
+        "avg_pts": 11.1,
+        "games_played": 58,
+        "games_missed": 24,
+        "total_missed": 24,
+        "absent_from_log": 24,
+        "dnp_count": 0,
+        "post_elim_missed": 11,
+        "pre_elim_missed": 13,
+        "loss_games_missed": 21,
+        "win_games_missed": 3
+      },
+      {
+        "player_id": 1629012,
+        "player_name": "Collin Sexton",
+        "avg_minutes": 27.9,
+        "avg_pts": 18.4,
+        "games_played": 63,
+        "games_missed": 19,
+        "total_missed": 19,
+        "absent_from_log": 19,
+        "dnp_count": 0,
+        "post_elim_missed": 8,
+        "pre_elim_missed": 11,
+        "loss_games_missed": 16,
+        "win_games_missed": 3
+      },
+      {
+        "player_id": 203903,
+        "player_name": "Jordan Clarkson",
+        "avg_minutes": 26.0,
+        "avg_pts": 16.2,
+        "games_played": 37,
+        "games_missed": 45,
+        "total_missed": 45,
+        "absent_from_log": 45,
+        "dnp_count": 0,
+        "post_elim_missed": 19,
+        "pre_elim_missed": 26,
+        "loss_games_missed": 38,
+        "win_games_missed": 7
+      },
+      {
+        "player_id": 1642268,
+        "player_name": "Isaiah Collier",
+        "avg_minutes": 25.9,
+        "avg_pts": 8.7,
+        "games_played": 71,
+        "games_missed": 11,
+        "total_missed": 11,
+        "absent_from_log": 11,
+        "dnp_count": 0,
+        "post_elim_missed": 3,
+        "pre_elim_missed": 8,
+        "loss_games_missed": 8,
+        "win_games_missed": 3
+      }
+    ],
+    "absence_summary": {
+      "total_star_absences": 191,
+      "total_possible_appearances": 574,
+      "absence_rate": 0.333,
+      "num_qualified": 7
+    },
+    "clustering": {
+      "elimination_date": "2025-02-26",
+      "elimination_game_number": 58,
+      "pre_elim_games": 58,
+      "post_elim_games": 24,
+      "pre_elim_absences": 102,
+      "post_elim_absences": 89,
+      "pre_elim_absence_rate": 0.251,
+      "post_elim_absence_rate": 0.53,
+      "cluster_ratio": 2.11,
+      "flag": true
+    },
+    "distribution": {
+      "team_wins": 17,
+      "team_losses": 65,
+      "absences_in_losses": 158,
+      "absences_in_wins": 33,
+      "loss_absence_rate": 0.347,
+      "win_absence_rate": 0.277
+    },
+    "total_games": 82
+  },
+  "NRCI": {
+    "rolling_net_rating": {
+      "season_net_rating": -9.3,
+      "first_15_net_rating": -10.3,
+      "last_15_net_rating": -18.4,
+      "peak_rolling": -0.8,
+      "peak_game": 40,
+      "trough_rolling": -18.4,
+      "trough_game": 82,
+      "max_decline": 17.6,
+      "snapshots": [
+        {
+          "game_number": 15,
+          "rolling_net_rating": -10.3
+        },
+        {
+          "game_number": 25,
+          "rolling_net_rating": -9.2
+        },
+        {
+          "game_number": 35,
+          "rolling_net_rating": -4.0
+        },
+        {
+          "game_number": 45,
+          "rolling_net_rating": -4.5
+        },
+        {
+          "game_number": 55,
+          "rolling_net_rating": -8.6
+        },
+        {
+          "game_number": 65,
+          "rolling_net_rating": -7.9
+        },
+        {
+          "game_number": 75,
+          "rolling_net_rating": -14.5
+        }
+      ]
+    },
+    "q4_performance": {
+      "close_games": 30,
+      "close_wins": 7,
+      "close_losses": 23,
+      "close_game_win_pct": 0.233,
+      "blowout_losses": 26,
+      "blowout_loss_pct": 0.317
+    },
+    "pre_post_elim": {
+      "elimination_date": "2025-02-26",
+      "elimination_game": 58,
+      "pre_elim_games": 58,
+      "post_elim_games": 24,
+      "pre_elim_net_rating": -7.2,
+      "post_elim_net_rating": -14.3,
+      "net_rating_change": -7.1,
+      "pre_elim_off_rating": 111.3,
+      "post_elim_off_rating": 107.9,
+      "pre_elim_def_rating": 118.5,
+      "post_elim_def_rating": 122.2,
+      "collapse_flag": true
+    },
+    "opponent_adjusted": {}
+  },
+  "RIS": {
+    "baseline_rotation": {
+      "pre_elim_games": 58,
+      "total_pre_players": 21,
+      "top_8": [
+        {
+          "player_id": 1628374,
+          "player_name": "Lauri Markkanen",
+          "pre_avg_minutes": 31.3,
+          "pre_games": 44,
+          "pre_net_rating": -6.0,
+          "pre_usg": 0.223
+        },
+        {
+          "player_id": 1628381,
+          "player_name": "John Collins",
+          "pre_avg_minutes": 30.6,
+          "pre_games": 37,
+          "pre_net_rating": -2.6,
+          "pre_usg": 0.232
+        },
+        {
+          "player_id": 1641718,
+          "player_name": "Keyonte George",
+          "pre_avg_minutes": 29.7,
+          "pre_games": 51,
+          "pre_net_rating": -9.2,
+          "pre_usg": 0.224
+        },
+        {
+          "player_id": 1631117,
+          "player_name": "Walker Kessler",
+          "pre_avg_minutes": 29.2,
+          "pre_games": 47,
+          "pre_net_rating": -6.7,
+          "pre_usg": 0.121
+        },
+        {
+          "player_id": 1629012,
+          "player_name": "Collin Sexton",
+          "pre_avg_minutes": 26.8,
+          "pre_games": 49,
+          "pre_net_rating": -4.8,
+          "pre_usg": 0.246
+        },
+        {
+          "player_id": 203903,
+          "player_name": "Jordan Clarkson",
+          "pre_avg_minutes": 25.0,
+          "pre_games": 34,
+          "pre_net_rating": -10.1,
+          "pre_usg": 0.252
+        },
+        {
+          "player_id": 1641707,
+          "player_name": "Taylor Hendricks",
+          "pre_avg_minutes": 24.8,
+          "pre_games": 3,
+          "pre_net_rating": -13.9,
+          "pre_usg": 0.113
+        },
+        {
+          "player_id": 1642268,
+          "player_name": "Isaiah Collier",
+          "pre_avg_minutes": 24.0,
+          "pre_games": 50,
+          "pre_net_rating": -11.7,
+          "pre_usg": 0.169
+        }
+      ]
+    },
+    "post_elim_changes": {
+      "post_elim_games": 24,
+      "changes": [
+        {
+          "player_name": "Lauri Markkanen",
+          "pre_avg_min": 31.3,
+          "post_avg_min": 19.4,
+          "min_change": -11.9,
+          "pct_change": -38.0,
+          "post_games": 5
+        },
+        {
+          "player_name": "John Collins",
+          "pre_avg_min": 30.6,
+          "post_avg_min": 22.4,
+          "min_change": -8.2,
+          "pct_change": -26.8,
+          "post_games": 4
+        },
+        {
+          "player_name": "Keyonte George",
+          "pre_avg_min": 29.7,
+          "post_avg_min": 28.2,
+          "min_change": -1.5,
+          "pct_change": -5.1,
+          "post_games": 21
+        },
+        {
+          "player_name": "Walker Kessler",
+          "pre_avg_min": 29.2,
+          "post_avg_min": 19.3,
+          "min_change": -9.9,
+          "pct_change": -33.9,
+          "post_games": 19
+        },
+        {
+          "player_name": "Collin Sexton",
+          "pre_avg_min": 26.8,
+          "post_avg_min": 21.2,
+          "min_change": -5.6,
+          "pct_change": -20.9,
+          "post_games": 21
+        },
+        {
+          "player_name": "Jordan Clarkson",
+          "pre_avg_min": 25.0,
+          "post_avg_min": 18.5,
+          "min_change": -6.5,
+          "pct_change": -26.0,
+          "post_games": 6
+        },
+        {
+          "player_name": "Taylor Hendricks",
+          "pre_avg_min": 24.8,
+          "post_avg_min": 0.0,
+          "min_change": -24.8,
+          "pct_change": -100.0,
+          "post_games": 1
+        },
+        {
+          "player_name": "Isaiah Collier",
+          "pre_avg_min": 24.0,
+          "post_avg_min": 26.6,
+          "min_change": 2.6,
+          "pct_change": 10.8,
+          "post_games": 24
+        }
+      ],
+      "new_rotation_players": [
+        {
+          "player_name": "Kyle Filipowski",
+          "post_avg_min": 26.3,
+          "post_games": 24
+        },
+        {
+          "player_name": "Brice Sensabaugh",
+          "post_avg_min": 25.0,
+          "post_games": 24
+        },
+        {
+          "player_name": "Johnny Juzang",
+          "post_avg_min": 23.0,
+          "post_games": 24
+        },
+        {
+          "player_name": "Cody Williams",
+          "post_avg_min": 21.2,
+          "post_games": 18
+        }
+      ],
+      "avg_minutes_change": -8.2,
+      "significant_decreases": 6,
+      "rotation_disruption_flag": true
+    },
+    "quality_correlation": {
+      "pre_elim_corr": -0.025,
+      "post_elim_corr": -0.167,
+      "correlation_shift": -0.142,
+      "meritocracy_decline_flag": false
+    },
+    "experimentation": {
+      "pre_avg_players_per_game": 12.6,
+      "post_avg_players_per_game": 12.2,
+      "pre_total_unique_players": 21,
+      "post_total_unique_players": 18,
+      "experimentation_increase": -0.4
+    }
+  },
+  "BTCA": {
+    "league_context": {
+      "team_wins": 17,
+      "team_losses": 65,
+      "team_record": "17-65",
+      "bottom_6_teams": [
+        [
+          "Jazz",
+          17
+        ],
+        [
+          "Wizards",
+          18
+        ],
+        [
+          "Hornets",
+          19
+        ],
+        [
+          "Pelicans",
+          21
+        ],
+        [
+          "76ers",
+          24
+        ],
+        [
+          "Nets",
+          26
+        ]
+      ],
+      "bottom_6_wins": [
+        17,
+        18,
+        19,
+        21,
+        24,
+        26
+      ],
+      "historical_avg": 22.5,
+      "historical_std": 2.5,
+      "current_bottom6_avg": 20.8,
+      "deviation_from_baseline": -0.69,
+      "teams_under_22_wins": 4,
+      "league_wide_flag": true,
+      "seasons_analyzed": 20
+    },
+    "temporal_pattern": {
+      "pre_asb_win_pct": 0.241,
+      "pre_asb_record": "13-41",
+      "post_asb_win_pct": 0.143,
+      "post_asb_record": "4-24",
+      "post_as_pct_of_pre": 59.3,
+      "below_50_threshold": false,
+      "roster_talent_loss_clears_flag": false,
+      "flag": false,
+      "pre_asb_net_rating": -7.0,
+      "post_asb_net_rating": -13.4
+    },
+    "calendar_correlation": {
+      "periods": {
+        "Pre-trade deadline": {
+          "win_rate": 0.245,
+          "record": "12-37",
+          "games": 49
+        },
+        "Post-deadline to ASB": {
+          "win_rate": 0.2,
+          "record": "1-4",
+          "games": 5
+        },
+        "Post-ASB to elimination": {
+          "win_rate": 0.333,
+          "record": "1-2",
+          "games": 3
+        },
+        "Post-elimination": {
+          "win_rate": 0.12,
+          "record": "3-22",
+          "games": 25
+        }
+      },
+      "trade_deadline": "2025-02-06",
+      "asb_date": "2025-02-14",
+      "elimination_date": "2025-02-26"
+    }
+  },
+  "supplemental": {
+    "draft_pick_incentive": {
+      "team_wins": 17,
+      "team_losses": 65,
+      "draft_position": 1,
+      "wins_gap_to_next_worse": null,
+      "wins_gap_to_next_better": 1,
+      "bottom_5_cluster_size": 3,
+      "wins_to_exit_bottom_5": 8,
+      "bottom_5_cutoff_wins": 24,
+      "in_bottom_3": true,
+      "in_bottom_5": true
+    },
+    "margin_profile": {
+      "total_losses": 65,
+      "total_wins": 17,
+      "avg_loss_margin": -14.7,
+      "avg_win_margin": 11.3,
+      "blowout_losses": 26,
+      "blowout_loss_pct": 0.4,
+      "competitive_losses": 14,
+      "competitive_loss_pct": 0.215,
+      "first_half_net_rating": -6.9,
+      "second_half_net_rating": -11.7,
+      "trajectory": -4.8,
+      "pre_elim_avg_margin": -7.2,
+      "post_elim_avg_margin": -14.3,
+      "margin_asymmetry": -3.4
+    },
+    "veteran_shelving": {
+      "total_players_used": 20,
+      "regular_rotation_size": 14,
+      "barely_played_count": 6,
+      "barely_played": [
+        {
+          "player_name": "Patty Mills",
+          "games": 17,
+          "avg_min": 15.3
+        },
+        {
+          "player_name": "KJ Martin",
+          "games": 19,
+          "avg_min": 22.7
+        },
+        {
+          "player_name": "Jaden Springer",
+          "games": 17,
+          "avg_min": 13.2
+        },
+        {
+          "player_name": "Oscar Tshiebwe",
+          "games": 14,
+          "avg_min": 18.2
+        },
+        {
+          "player_name": "Taylor Hendricks",
+          "games": 3,
+          "avg_min": 24.8
+        },
+        {
+          "player_name": "Elijah Harkless",
+          "games": 10,
+          "avg_min": 13.8
+        }
+      ],
+      "shelved_post_elim": [
+        {
+          "player_name": "Patty Mills",
+          "pre_avg_min": 15.3,
+          "post_avg_min": 0,
+          "pre_games": 17,
+          "post_games": 0,
+          "minutes_drop": 15.3
+        },
+        {
+          "player_name": "Drew Eubanks",
+          "pre_avg_min": 15.4,
+          "post_avg_min": 0,
+          "pre_games": 37,
+          "post_games": 0,
+          "minutes_drop": 15.4
+        }
+      ],
+      "shelved_count": 2,
+      "one_off_players": 1
+    },
+    "pace_manipulation": {
+      "season_avg_pace": 100.9,
+      "pace_std": 4.2,
+      "pace_cv": 4.2,
+      "first_20_pace": 99.7,
+      "last_20_pace": 102.2,
+      "pace_trajectory": 2.5,
+      "pre_elim_pace": 100.2,
+      "post_elim_pace": 102.6,
+      "pace_shift_at_elim": 2.4,
+      "league_avg_pace": 100.9
+    },
+    "lineup_overhaul": {
+      "trade_deadline": {
+        "date": "2025-02-06",
+        "total_departed": 3,
+        "meaningful_departed": 3,
+        "departed_players": [
+          {
+            "player_name": "Drew Eubanks",
+            "avg_min_before": 15.4
+          },
+          {
+            "player_name": "Taylor Hendricks",
+            "avg_min_before": 24.8
+          },
+          {
+            "player_name": "Patty Mills",
+            "avg_min_before": 15.3
+          }
+        ],
+        "total_arrived": 2,
+        "meaningful_arrived": 2,
+        "arrived_players": [
+          {
+            "player_name": "Jaden Springer",
+            "avg_min_after": 13.2
+          },
+          {
+            "player_name": "KJ Martin",
+            "avg_min_after": 22.7
+          }
+        ],
+        "roster_churn": 5
+      },
+      "roster_churn_overall": {
+        "total_unique_players": 20,
+        "first_half_unique": 18,
+        "second_half_unique": 19
+      }
+    }
+  },
+  "composite": {
+    "raw_scores": {
+      "SAS": 48.7,
+      "NRCI": 92.2,
+      "RIS": 64.5,
+      "BTCA": 56.4
+    },
+    "weighted_scores": {
+      "SAS": 14.6,
+      "NRCI": 23.1,
+      "RIS": 16.1,
+      "BTCA": 11.3
+    },
+    "composite_score": 65.1,
+    "classification": "Orange",
+    "expected_classification": "Red",
+    "match": false
+  },
+  "elimination": {
+    "elimination_date": "2025-02-26",
+    "elimination_game_number": 58,
+    "playoff_cutoff_wins": 39,
+    "playoff_cutoff_seed": 10,
+    "conference": "West",
+    "final_wins": null
+  }
+}

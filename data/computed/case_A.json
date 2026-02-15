@@ -1,0 +1,667 @@
+{
+  "SAS": {
+    "qualified_players": [
+      {
+        "player_id": 202323,
+        "player_name": "Evan Turner",
+        "avg_minutes": 34.9,
+        "avg_pts": 17.4,
+        "games_played": 54,
+        "games_missed": 28,
+        "total_missed": 28,
+        "absent_from_log": 28,
+        "dnp_count": 0,
+        "post_elim_missed": 23,
+        "pre_elim_missed": 5,
+        "loss_games_missed": 24,
+        "win_games_missed": 4
+      },
+      {
+        "player_id": 203487,
+        "player_name": "Michael Carter-Williams",
+        "avg_minutes": 34.5,
+        "avg_pts": 16.7,
+        "games_played": 70,
+        "games_missed": 12,
+        "total_missed": 12,
+        "absent_from_log": 12,
+        "dnp_count": 0,
+        "post_elim_missed": 0,
+        "pre_elim_missed": 12,
+        "loss_games_missed": 11,
+        "win_games_missed": 1
+      },
+      {
+        "player_id": 201152,
+        "player_name": "Thaddeus Young",
+        "avg_minutes": 34.4,
+        "avg_pts": 17.9,
+        "games_played": 79,
+        "games_missed": 3,
+        "total_missed": 3,
+        "absent_from_log": 3,
+        "dnp_count": 0,
+        "post_elim_missed": 0,
+        "pre_elim_missed": 3,
+        "loss_games_missed": 2,
+        "win_games_missed": 1
+      },
+      {
+        "player_id": 201150,
+        "player_name": "Spencer Hawes",
+        "avg_minutes": 31.4,
+        "avg_pts": 13.0,
+        "games_played": 53,
+        "games_missed": 29,
+        "total_missed": 29,
+        "absent_from_log": 29,
+        "dnp_count": 0,
+        "post_elim_missed": 23,
+        "pre_elim_missed": 6,
+        "loss_games_missed": 25,
+        "win_games_missed": 4
+      },
+      {
+        "player_id": 202341,
+        "player_name": "James Anderson",
+        "avg_minutes": 28.9,
+        "avg_pts": 10.1,
+        "games_played": 80,
+        "games_missed": 2,
+        "total_missed": 2,
+        "absent_from_log": 2,
+        "dnp_count": 0,
+        "post_elim_missed": 2,
+        "pre_elim_missed": 0,
+        "loss_games_missed": 2,
+        "win_games_missed": 0
+      },
+      {
+        "player_id": 203156,
+        "player_name": "Henry Sims",
+        "avg_minutes": 27.2,
+        "avg_pts": 11.8,
+        "games_played": 26,
+        "games_missed": 56,
+        "total_missed": 56,
+        "absent_from_log": 56,
+        "dnp_count": 0,
+        "post_elim_missed": 0,
+        "pre_elim_missed": 56,
+        "loss_games_missed": 41,
+        "win_games_missed": 15
+      }
+    ],
+    "absence_summary": {
+      "total_star_absences": 130,
+      "total_possible_appearances": 492,
+      "absence_rate": 0.264,
+      "num_qualified": 6
+    },
+    "clustering": {
+      "elimination_date": "2014-03-02",
+      "elimination_game_number": 60,
+      "pre_elim_games": 60,
+      "post_elim_games": 22,
+      "pre_elim_absences": 82,
+      "post_elim_absences": 48,
+      "pre_elim_absence_rate": 0.228,
+      "post_elim_absence_rate": 0.364,
+      "cluster_ratio": 1.6,
+      "flag": false
+    },
+    "distribution": {
+      "team_wins": 19,
+      "team_losses": 63,
+      "absences_in_losses": 105,
+      "absences_in_wins": 25,
+      "loss_absence_rate": 0.278,
+      "win_absence_rate": 0.219
+    },
+    "total_games": 82
+  },
+  "NRCI": {
+    "rolling_net_rating": {
+      "season_net_rating": -10.0,
+      "first_15_net_rating": -5.3,
+      "last_15_net_rating": -5.6,
+      "peak_rolling": -5.3,
+      "peak_game": 15,
+      "trough_rolling": -19.7,
+      "trough_game": 66,
+      "max_decline": 14.4,
+      "snapshots": [
+        {
+          "game_number": 15,
+          "rolling_net_rating": -5.3
+        },
+        {
+          "game_number": 25,
+          "rolling_net_rating": -12.0
+        },
+        {
+          "game_number": 35,
+          "rolling_net_rating": -9.4
+        },
+        {
+          "game_number": 45,
+          "rolling_net_rating": -7.3
+        },
+        {
+          "game_number": 55,
+          "rolling_net_rating": -14.2
+        },
+        {
+          "game_number": 65,
+          "rolling_net_rating": -18.8
+        },
+        {
+          "game_number": 75,
+          "rolling_net_rating": -12.5
+        }
+      ]
+    },
+    "q4_performance": {
+      "close_games": 27,
+      "close_wins": 13,
+      "close_losses": 14,
+      "close_game_win_pct": 0.481,
+      "blowout_losses": 24,
+      "blowout_loss_pct": 0.293
+    },
+    "pre_post_elim": {
+      "elimination_date": "2014-03-02",
+      "elimination_game": 60,
+      "pre_elim_games": 60,
+      "post_elim_games": 22,
+      "pre_elim_net_rating": -10.3,
+      "post_elim_net_rating": -9.0,
+      "net_rating_change": 1.3,
+      "pre_elim_off_rating": 98.3,
+      "post_elim_off_rating": 101.0,
+      "pre_elim_def_rating": 108.6,
+      "post_elim_def_rating": 110.0,
+      "collapse_flag": false
+    },
+    "opponent_adjusted": {}
+  },
+  "RIS": {
+    "baseline_rotation": {
+      "pre_elim_games": 60,
+      "total_pre_players": 21,
+      "top_8": [
+        {
+          "player_id": 202323,
+          "player_name": "Evan Turner",
+          "pre_avg_minutes": 34.3,
+          "pre_games": 55,
+          "pre_net_rating": -10.5,
+          "pre_usg": 0.234
+        },
+        {
+          "player_id": 201152,
+          "player_name": "Thaddeus Young",
+          "pre_avg_minutes": 31.9,
+          "pre_games": 60,
+          "pre_net_rating": -12.7,
+          "pre_usg": 0.22
+        },
+        {
+          "player_id": 201150,
+          "player_name": "Spencer Hawes",
+          "pre_avg_minutes": 30.3,
+          "pre_games": 55,
+          "pre_net_rating": -12.9,
+          "pre_usg": 0.18
+        },
+        {
+          "player_id": 202341,
+          "player_name": "James Anderson",
+          "pre_avg_minutes": 28.6,
+          "pre_games": 60,
+          "pre_net_rating": -12.1,
+          "pre_usg": 0.154
+        },
+        {
+          "player_id": 203487,
+          "player_name": "Michael Carter-Williams",
+          "pre_avg_minutes": 27.5,
+          "pre_games": 60,
+          "pre_net_rating": -7.1,
+          "pre_usg": 0.209
+        },
+        {
+          "player_id": 203100,
+          "player_name": "Tony Wroten",
+          "pre_avg_minutes": 21.4,
+          "pre_games": 60,
+          "pre_net_rating": -12.5,
+          "pre_usg": 0.243
+        },
+        {
+          "player_id": 203156,
+          "player_name": "Henry Sims",
+          "pre_avg_minutes": 19.7,
+          "pre_games": 5,
+          "pre_net_rating": -13.1,
+          "pre_usg": 0.104
+        },
+        {
+          "player_id": 203138,
+          "player_name": "Hollis Thompson",
+          "pre_avg_minutes": 19.6,
+          "pre_games": 60,
+          "pre_net_rating": -12.1,
+          "pre_usg": 0.101
+        }
+      ]
+    },
+    "post_elim_changes": {
+      "post_elim_games": 22,
+      "changes": [
+        {
+          "player_name": "Evan Turner",
+          "pre_avg_min": 34.3,
+          "post_avg_min": 0,
+          "min_change": -34.3,
+          "pct_change": -100.0,
+          "post_games": 0
+        },
+        {
+          "player_name": "Thaddeus Young",
+          "pre_avg_min": 31.9,
+          "post_avg_min": 36.4,
+          "min_change": 4.5,
+          "pct_change": 14.1,
+          "post_games": 22
+        },
+        {
+          "player_name": "Spencer Hawes",
+          "pre_avg_min": 30.3,
+          "post_avg_min": 0,
+          "min_change": -30.3,
+          "pct_change": -100.0,
+          "post_games": 0
+        },
+        {
+          "player_name": "James Anderson",
+          "pre_avg_min": 28.6,
+          "post_avg_min": 26.9,
+          "min_change": -1.7,
+          "pct_change": -5.9,
+          "post_games": 22
+        },
+        {
+          "player_name": "Michael Carter-Williams",
+          "pre_avg_min": 27.5,
+          "post_avg_min": 34.8,
+          "min_change": 7.3,
+          "pct_change": 26.5,
+          "post_games": 22
+        },
+        {
+          "player_name": "Tony Wroten",
+          "pre_avg_min": 21.4,
+          "post_avg_min": 21.9,
+          "min_change": 0.5,
+          "pct_change": 2.3,
+          "post_games": 22
+        },
+        {
+          "player_name": "Henry Sims",
+          "pre_avg_min": 19.7,
+          "post_avg_min": 27.6,
+          "min_change": 7.9,
+          "pct_change": 40.1,
+          "post_games": 22
+        },
+        {
+          "player_name": "Hollis Thompson",
+          "pre_avg_min": 19.6,
+          "post_avg_min": 25.8,
+          "min_change": 6.2,
+          "pct_change": 31.6,
+          "post_games": 22
+        }
+      ],
+      "new_rotation_players": [
+        {
+          "player_name": "Elliot Williams",
+          "post_avg_min": 21.2,
+          "post_games": 22
+        },
+        {
+          "player_name": "Jarvis Varnado",
+          "post_avg_min": 14.5,
+          "post_games": 22
+        }
+      ],
+      "avg_minutes_change": -5.0,
+      "significant_decreases": 2,
+      "rotation_disruption_flag": false
+    },
+    "quality_correlation": {
+      "pre_elim_corr": -0.43,
+      "post_elim_corr": -0.121,
+      "correlation_shift": 0.308,
+      "meritocracy_decline_flag": false
+    },
+    "experimentation": {
+      "pre_avg_players_per_game": 11.9,
+      "post_avg_players_per_game": 12.2,
+      "pre_total_unique_players": 21,
+      "post_total_unique_players": 18,
+      "experimentation_increase": 0.3
+    }
+  },
+  "BTCA": {
+    "league_context": {
+      "team_wins": 19,
+      "team_losses": 63,
+      "team_record": "19-63",
+      "bottom_6_teams": [
+        [
+          "Bucks",
+          15
+        ],
+        [
+          "76ers",
+          19
+        ],
+        [
+          "Magic",
+          23
+        ],
+        [
+          "Celtics",
+          25
+        ],
+        [
+          "Jazz",
+          25
+        ],
+        [
+          "Lakers",
+          27
+        ]
+      ],
+      "bottom_6_wins": [
+        15,
+        19,
+        23,
+        25,
+        25,
+        27
+      ],
+      "historical_avg": 22.5,
+      "historical_std": 2.5,
+      "current_bottom6_avg": 22.3,
+      "deviation_from_baseline": -0.09,
+      "teams_under_22_wins": 2,
+      "league_wide_flag": false,
+      "seasons_analyzed": 20
+    },
+    "temporal_pattern": {
+      "pre_asb_win_pct": 0.278,
+      "pre_asb_record": "15-39",
+      "post_asb_win_pct": 0.143,
+      "post_asb_record": "4-24",
+      "post_as_pct_of_pre": 51.4,
+      "below_50_threshold": false,
+      "roster_talent_loss_clears_flag": false,
+      "flag": false,
+      "pre_asb_net_rating": -9.6,
+      "post_asb_net_rating": -10.9
+    },
+    "calendar_correlation": {
+      "periods": {
+        "Pre-trade deadline": {
+          "win_rate": 0.273,
+          "record": "15-40",
+          "games": 55
+        },
+        "Post-ASB to elimination": {
+          "win_rate": 0.0,
+          "record": "0-5",
+          "games": 5
+        },
+        "Post-elimination": {
+          "win_rate": 0.174,
+          "record": "4-19",
+          "games": 23
+        }
+      },
+      "trade_deadline": "2014-02-20",
+      "asb_date": "2014-02-14",
+      "elimination_date": "2014-03-02"
+    }
+  },
+  "supplemental": {
+    "draft_pick_incentive": {
+      "team_wins": 19,
+      "team_losses": 63,
+      "draft_position": 2,
+      "wins_gap_to_next_worse": 4,
+      "wins_gap_to_next_better": 4,
+      "bottom_5_cluster_size": 1,
+      "wins_to_exit_bottom_5": 7,
+      "bottom_5_cutoff_wins": 25,
+      "in_bottom_3": true,
+      "in_bottom_5": true
+    },
+    "margin_profile": {
+      "total_losses": 63,
+      "total_wins": 19,
+      "avg_loss_margin": -15.2,
+      "avg_win_margin": 7.4,
+      "blowout_losses": 24,
+      "blowout_loss_pct": 0.381,
+      "competitive_losses": 6,
+      "competitive_loss_pct": 0.095,
+      "first_half_net_rating": -8.2,
+      "second_half_net_rating": -11.7,
+      "trajectory": -3.5,
+      "pre_elim_avg_margin": -10.3,
+      "post_elim_avg_margin": -9.0,
+      "margin_asymmetry": -7.8
+    },
+    "veteran_shelving": {
+      "total_players_used": 23,
+      "regular_rotation_size": 9,
+      "barely_played_count": 10,
+      "barely_played": [
+        {
+          "player_name": "Eric Maynor",
+          "games": 8,
+          "avg_min": 14.0
+        },
+        {
+          "player_name": "Byron Mullens",
+          "games": 18,
+          "avg_min": 13.7
+        },
+        {
+          "player_name": "Darius Morris",
+          "games": 12,
+          "avg_min": 16.1
+        },
+        {
+          "player_name": "Arnett Moultrie",
+          "games": 12,
+          "avg_min": 15.6
+        },
+        {
+          "player_name": "Darius Johnson-Odom",
+          "games": 3,
+          "avg_min": 5.1
+        },
+        {
+          "player_name": "James Nunnally",
+          "games": 9,
+          "avg_min": 12.4
+        },
+        {
+          "player_name": "Dewayne Dedmon",
+          "games": 11,
+          "avg_min": 13.7
+        },
+        {
+          "player_name": "Lorenzo Brown",
+          "games": 26,
+          "avg_min": 8.6
+        },
+        {
+          "player_name": "Adonis Thomas",
+          "games": 2,
+          "avg_min": 6.6
+        },
+        {
+          "player_name": "Casper Ware",
+          "games": 9,
+          "avg_min": 12.9
+        }
+      ],
+      "shelved_post_elim": [
+        {
+          "player_name": "Spencer Hawes",
+          "pre_avg_min": 31.4,
+          "post_avg_min": 0,
+          "pre_games": 53,
+          "post_games": 0,
+          "minutes_drop": 31.4
+        },
+        {
+          "player_name": "Evan Turner",
+          "pre_avg_min": 34.9,
+          "post_avg_min": 0,
+          "pre_games": 54,
+          "post_games": 0,
+          "minutes_drop": 34.9
+        },
+        {
+          "player_name": "Darius Morris",
+          "pre_avg_min": 16.1,
+          "post_avg_min": 0,
+          "pre_games": 12,
+          "post_games": 0,
+          "minutes_drop": 16.1
+        },
+        {
+          "player_name": "Lavoy Allen",
+          "pre_avg_min": 18.8,
+          "post_avg_min": 0,
+          "pre_games": 51,
+          "post_games": 0,
+          "minutes_drop": 18.8
+        }
+      ],
+      "shelved_count": 4,
+      "one_off_players": 2
+    },
+    "pace_manipulation": {
+      "season_avg_pace": 99.8,
+      "pace_std": 4.4,
+      "pace_cv": 4.4,
+      "first_20_pace": 100.2,
+      "last_20_pace": 97.2,
+      "pace_trajectory": -3.0,
+      "pre_elim_pace": 100.6,
+      "post_elim_pace": 97.5,
+      "pace_shift_at_elim": -3.1,
+      "league_avg_pace": 99.8
+    },
+    "lineup_overhaul": {
+      "trade_deadline": {
+        "date": "2014-02-20",
+        "total_departed": 6,
+        "meaningful_departed": 6,
+        "departed_players": [
+          {
+            "player_name": "Darius Morris",
+            "avg_min_before": 16.1
+          },
+          {
+            "player_name": "Lavoy Allen",
+            "avg_min_before": 18.8
+          },
+          {
+            "player_name": "Daniel Orton",
+            "avg_min_before": 11.4
+          },
+          {
+            "player_name": "Dewayne Dedmon",
+            "avg_min_before": 13.7
+          },
+          {
+            "player_name": "Evan Turner",
+            "avg_min_before": 34.9
+          },
+          {
+            "player_name": "Spencer Hawes",
+            "avg_min_before": 31.4
+          }
+        ],
+        "total_arrived": 8,
+        "meaningful_arrived": 6,
+        "arrived_players": [
+          {
+            "player_name": "Eric Maynor",
+            "avg_min_after": 14.0
+          },
+          {
+            "player_name": "Casper Ware",
+            "avg_min_after": 12.9
+          },
+          {
+            "player_name": "Byron Mullens",
+            "avg_min_after": 13.7
+          },
+          {
+            "player_name": "James Nunnally",
+            "avg_min_after": 12.4
+          },
+          {
+            "player_name": "Henry Sims",
+            "avg_min_after": 27.2
+          },
+          {
+            "player_name": "Jarvis Varnado",
+            "avg_min_after": 14.7
+          }
+        ],
+        "roster_churn": 14
+      },
+      "roster_churn_overall": {
+        "total_unique_players": 23,
+        "first_half_unique": 14,
+        "second_half_unique": 21
+      }
+    }
+  },
+  "composite": {
+    "raw_scores": {
+      "SAS": 35.9,
+      "NRCI": 33.2,
+      "RIS": 33.0,
+      "BTCA": 47.9
+    },
+    "weighted_scores": {
+      "SAS": 10.8,
+      "NRCI": 8.3,
+      "RIS": 8.2,
+      "BTCA": 9.6
+    },
+    "composite_score": 36.9,
+    "classification": "Yellow",
+    "expected_classification": "Red",
+    "match": false
+  },
+  "elimination": {
+    "elimination_date": "2014-03-02",
+    "elimination_game_number": 60,
+    "playoff_cutoff_wins": 38,
+    "playoff_cutoff_seed": 8,
+    "conference": "East",
+    "final_wins": null
+  }
+}

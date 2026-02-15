@@ -1,0 +1,781 @@
+{
+  "SAS": {
+    "qualified_players": [
+      {
+        "player_id": 203081,
+        "player_name": "Damian Lillard",
+        "avg_minutes": 36.3,
+        "avg_pts": 32.2,
+        "games_played": 58,
+        "games_missed": 24,
+        "total_missed": 24,
+        "absent_from_log": 24,
+        "dnp_count": 0,
+        "post_elim_missed": 8,
+        "pre_elim_missed": 16,
+        "loss_games_missed": 18,
+        "win_games_missed": 6
+      },
+      {
+        "player_id": 203924,
+        "player_name": "Jerami Grant",
+        "avg_minutes": 35.6,
+        "avg_pts": 20.5,
+        "games_played": 63,
+        "games_missed": 19,
+        "total_missed": 19,
+        "absent_from_log": 19,
+        "dnp_count": 0,
+        "post_elim_missed": 8,
+        "pre_elim_missed": 11,
+        "loss_games_missed": 14,
+        "win_games_missed": 5
+      },
+      {
+        "player_id": 1629014,
+        "player_name": "Anfernee Simons",
+        "avg_minutes": 35.0,
+        "avg_pts": 21.1,
+        "games_played": 62,
+        "games_missed": 20,
+        "total_missed": 20,
+        "absent_from_log": 20,
+        "dnp_count": 0,
+        "post_elim_missed": 8,
+        "pre_elim_missed": 12,
+        "loss_games_missed": 14,
+        "win_games_missed": 6
+      },
+      {
+        "player_id": 1628404,
+        "player_name": "Josh Hart",
+        "avg_minutes": 33.4,
+        "avg_pts": 9.5,
+        "games_played": 51,
+        "games_missed": 31,
+        "total_missed": 31,
+        "absent_from_log": 31,
+        "dnp_count": 0,
+        "post_elim_missed": 8,
+        "pre_elim_missed": 23,
+        "loss_games_missed": 23,
+        "win_games_missed": 8
+      },
+      {
+        "player_id": 1630219,
+        "player_name": "Skylar Mays",
+        "avg_minutes": 31.5,
+        "avg_pts": 15.3,
+        "games_played": 6,
+        "games_missed": 76,
+        "total_missed": 76,
+        "absent_from_log": 76,
+        "dnp_count": 0,
+        "post_elim_missed": 2,
+        "pre_elim_missed": 74,
+        "loss_games_missed": 44,
+        "win_games_missed": 32
+      },
+      {
+        "player_id": 1629680,
+        "player_name": "Matisse Thybulle",
+        "avg_minutes": 27.7,
+        "avg_pts": 7.4,
+        "games_played": 22,
+        "games_missed": 60,
+        "total_missed": 60,
+        "absent_from_log": 60,
+        "dnp_count": 0,
+        "post_elim_missed": 4,
+        "pre_elim_missed": 56,
+        "loss_games_missed": 33,
+        "win_games_missed": 27
+      },
+      {
+        "player_id": 1629629,
+        "player_name": "Cam Reddish",
+        "avg_minutes": 27.6,
+        "avg_pts": 10.9,
+        "games_played": 20,
+        "games_missed": 62,
+        "total_missed": 62,
+        "absent_from_log": 62,
+        "dnp_count": 0,
+        "post_elim_missed": 7,
+        "pre_elim_missed": 55,
+        "loss_games_missed": 34,
+        "win_games_missed": 28
+      },
+      {
+        "player_id": 203994,
+        "player_name": "Jusuf Nurki\u0107",
+        "avg_minutes": 26.8,
+        "avg_pts": 13.3,
+        "games_played": 52,
+        "games_missed": 30,
+        "total_missed": 30,
+        "absent_from_log": 30,
+        "dnp_count": 0,
+        "post_elim_missed": 8,
+        "pre_elim_missed": 22,
+        "loss_games_missed": 21,
+        "win_games_missed": 9
+      },
+      {
+        "player_id": 1626159,
+        "player_name": "Justise Winslow",
+        "avg_minutes": 26.8,
+        "avg_pts": 6.8,
+        "games_played": 29,
+        "games_missed": 53,
+        "total_missed": 53,
+        "absent_from_log": 53,
+        "dnp_count": 0,
+        "post_elim_missed": 8,
+        "pre_elim_missed": 45,
+        "loss_games_missed": 35,
+        "win_games_missed": 18
+      },
+      {
+        "player_id": 1631466,
+        "player_name": "Nate Williams",
+        "avg_minutes": 25.3,
+        "avg_pts": 10.6,
+        "games_played": 5,
+        "games_missed": 77,
+        "total_missed": 77,
+        "absent_from_log": 77,
+        "dnp_count": 0,
+        "post_elim_missed": 3,
+        "pre_elim_missed": 74,
+        "loss_games_missed": 45,
+        "win_games_missed": 32
+      }
+    ],
+    "absence_summary": {
+      "total_star_absences": 452,
+      "total_possible_appearances": 820,
+      "absence_rate": 0.551,
+      "num_qualified": 10
+    },
+    "clustering": {
+      "elimination_date": "2023-03-27",
+      "elimination_game_number": 75,
+      "pre_elim_games": 75,
+      "post_elim_games": 7,
+      "pre_elim_absences": 388,
+      "post_elim_absences": 64,
+      "pre_elim_absence_rate": 0.517,
+      "post_elim_absence_rate": 0.914,
+      "cluster_ratio": 1.77,
+      "flag": false
+    },
+    "distribution": {
+      "team_wins": 33,
+      "team_losses": 49,
+      "absences_in_losses": 281,
+      "absences_in_wins": 171,
+      "loss_absence_rate": 0.573,
+      "win_absence_rate": 0.518
+    },
+    "total_games": 82
+  },
+  "NRCI": {
+    "rolling_net_rating": {
+      "season_net_rating": -4.0,
+      "first_15_net_rating": 2.0,
+      "last_15_net_rating": -16.3,
+      "peak_rolling": 3.9,
+      "peak_game": 37,
+      "trough_rolling": -16.3,
+      "trough_game": 82,
+      "max_decline": 20.2,
+      "snapshots": [
+        {
+          "game_number": 15,
+          "rolling_net_rating": 2.0
+        },
+        {
+          "game_number": 25,
+          "rolling_net_rating": -2.1
+        },
+        {
+          "game_number": 35,
+          "rolling_net_rating": 0.9
+        },
+        {
+          "game_number": 45,
+          "rolling_net_rating": -0.7
+        },
+        {
+          "game_number": 55,
+          "rolling_net_rating": 0.3
+        },
+        {
+          "game_number": 65,
+          "rolling_net_rating": -4.2
+        },
+        {
+          "game_number": 75,
+          "rolling_net_rating": -11.5
+        }
+      ]
+    },
+    "q4_performance": {
+      "close_games": 31,
+      "close_wins": 14,
+      "close_losses": 17,
+      "close_game_win_pct": 0.452,
+      "blowout_losses": 19,
+      "blowout_loss_pct": 0.232
+    },
+    "pre_post_elim": {
+      "elimination_date": "2023-03-27",
+      "elimination_game": 75,
+      "pre_elim_games": 75,
+      "post_elim_games": 7,
+      "pre_elim_net_rating": -2.6,
+      "post_elim_net_rating": -18.8,
+      "net_rating_change": -16.2,
+      "pre_elim_off_rating": 114.9,
+      "post_elim_off_rating": 105.1,
+      "pre_elim_def_rating": 117.5,
+      "post_elim_def_rating": 123.9,
+      "collapse_flag": true
+    },
+    "opponent_adjusted": {}
+  },
+  "RIS": {
+    "baseline_rotation": {
+      "pre_elim_games": 75,
+      "total_pre_players": 20,
+      "top_8": [
+        {
+          "player_id": 203924,
+          "player_name": "Jerami Grant",
+          "pre_avg_minutes": 35.6,
+          "pre_games": 63,
+          "pre_net_rating": -1.9,
+          "pre_usg": 0.228
+        },
+        {
+          "player_id": 1629014,
+          "player_name": "Anfernee Simons",
+          "pre_avg_minutes": 35.0,
+          "pre_games": 62,
+          "pre_net_rating": -2.0,
+          "pre_usg": 0.248
+        },
+        {
+          "player_id": 1628404,
+          "player_name": "Josh Hart",
+          "pre_avg_minutes": 32.2,
+          "pre_games": 53,
+          "pre_net_rating": 2.8,
+          "pre_usg": 0.118
+        },
+        {
+          "player_id": 203081,
+          "player_name": "Damian Lillard",
+          "pre_avg_minutes": 31.0,
+          "pre_games": 68,
+          "pre_net_rating": 1.7,
+          "pre_usg": 0.282
+        },
+        {
+          "player_id": 1629629,
+          "player_name": "Cam Reddish",
+          "pre_avg_minutes": 27.6,
+          "pre_games": 20,
+          "pre_net_rating": -16.5,
+          "pre_usg": 0.171
+        },
+        {
+          "player_id": 1629680,
+          "player_name": "Matisse Thybulle",
+          "pre_avg_minutes": 27.3,
+          "pre_games": 19,
+          "pre_net_rating": -6.3,
+          "pre_usg": 0.121
+        },
+        {
+          "player_id": 203994,
+          "player_name": "Jusuf Nurki\u0107",
+          "pre_avg_minutes": 25.3,
+          "pre_games": 55,
+          "pre_net_rating": -3.0,
+          "pre_usg": 0.212
+        },
+        {
+          "player_id": 1626159,
+          "player_name": "Justise Winslow",
+          "pre_avg_minutes": 24.2,
+          "pre_games": 32,
+          "pre_net_rating": -4.1,
+          "pre_usg": 0.127
+        }
+      ]
+    },
+    "post_elim_changes": {
+      "post_elim_games": 7,
+      "changes": [
+        {
+          "player_name": "Jerami Grant",
+          "pre_avg_min": 35.6,
+          "post_avg_min": 0,
+          "min_change": -35.6,
+          "pct_change": -100.0,
+          "post_games": 0
+        },
+        {
+          "player_name": "Anfernee Simons",
+          "pre_avg_min": 35.0,
+          "post_avg_min": 0,
+          "min_change": -35.0,
+          "pct_change": -100.0,
+          "post_games": 0
+        },
+        {
+          "player_name": "Josh Hart",
+          "pre_avg_min": 32.2,
+          "post_avg_min": 0,
+          "min_change": -32.2,
+          "pct_change": -100.0,
+          "post_games": 0
+        },
+        {
+          "player_name": "Damian Lillard",
+          "pre_avg_min": 31.0,
+          "post_avg_min": 0,
+          "min_change": -31.0,
+          "pct_change": -100.0,
+          "post_games": 0
+        },
+        {
+          "player_name": "Cam Reddish",
+          "pre_avg_min": 27.6,
+          "post_avg_min": 0.0,
+          "min_change": -27.6,
+          "pct_change": -100.0,
+          "post_games": 7
+        },
+        {
+          "player_name": "Matisse Thybulle",
+          "pre_avg_min": 27.3,
+          "post_avg_min": 30.4,
+          "min_change": 3.1,
+          "pct_change": 11.4,
+          "post_games": 3
+        },
+        {
+          "player_name": "Jusuf Nurki\u0107",
+          "pre_avg_min": 25.3,
+          "post_avg_min": 0,
+          "min_change": -25.3,
+          "pct_change": -100.0,
+          "post_games": 0
+        },
+        {
+          "player_name": "Justise Winslow",
+          "pre_avg_min": 24.2,
+          "post_avg_min": 0,
+          "min_change": -24.2,
+          "pct_change": -100.0,
+          "post_games": 0
+        }
+      ],
+      "new_rotation_players": [
+        {
+          "player_name": "Skylar Mays",
+          "post_avg_min": 31.5,
+          "post_games": 6
+        },
+        {
+          "player_name": "Kevin Knox II",
+          "post_avg_min": 30.5,
+          "post_games": 7
+        },
+        {
+          "player_name": "Shaedon Sharpe",
+          "post_avg_min": 30.1,
+          "post_games": 7
+        },
+        {
+          "player_name": "Nassir Little",
+          "post_avg_min": 25.8,
+          "post_games": 2
+        },
+        {
+          "player_name": "Nate Williams",
+          "post_avg_min": 25.3,
+          "post_games": 5
+        },
+        {
+          "player_name": "Shaquille Harrison",
+          "post_avg_min": 24.0,
+          "post_games": 5
+        },
+        {
+          "player_name": "John Butler Jr.",
+          "post_avg_min": 23.6,
+          "post_games": 7
+        }
+      ],
+      "avg_minutes_change": -26.0,
+      "significant_decreases": 7,
+      "rotation_disruption_flag": true
+    },
+    "quality_correlation": {
+      "pre_elim_corr": 0.417,
+      "post_elim_corr": 0.035,
+      "correlation_shift": -0.382,
+      "meritocracy_decline_flag": true
+    },
+    "experimentation": {
+      "pre_avg_players_per_game": 12.1,
+      "post_avg_players_per_game": 11.0,
+      "pre_total_unique_players": 20,
+      "post_total_unique_players": 16,
+      "experimentation_increase": -1.1
+    }
+  },
+  "BTCA": {
+    "league_context": {
+      "team_wins": 33,
+      "team_losses": 49,
+      "team_record": "33-49",
+      "bottom_6_teams": [
+        [
+          "Pistons",
+          17
+        ],
+        [
+          "Rockets",
+          22
+        ],
+        [
+          "Spurs",
+          22
+        ],
+        [
+          "Hornets",
+          27
+        ],
+        [
+          "Trail Blazers",
+          33
+        ],
+        [
+          "Magic",
+          34
+        ]
+      ],
+      "bottom_6_wins": [
+        17,
+        22,
+        22,
+        27,
+        33,
+        34
+      ],
+      "historical_avg": 22.5,
+      "historical_std": 2.5,
+      "current_bottom6_avg": 25.8,
+      "deviation_from_baseline": 1.31,
+      "teams_under_22_wins": 1,
+      "league_wide_flag": false,
+      "seasons_analyzed": 20
+    },
+    "temporal_pattern": {
+      "pre_asb_win_pct": 0.483,
+      "pre_asb_record": "28-30",
+      "post_asb_win_pct": 0.208,
+      "post_asb_record": "5-19",
+      "post_as_pct_of_pre": 43.1,
+      "below_50_threshold": true,
+      "roster_talent_loss_clears_flag": false,
+      "flag": true,
+      "pre_asb_net_rating": -0.3,
+      "post_asb_net_rating": -12.7
+    },
+    "calendar_correlation": {
+      "periods": {
+        "Pre-trade deadline": {
+          "win_rate": 0.491,
+          "record": "27-28",
+          "games": 55
+        },
+        "Post-deadline to ASB": {
+          "win_rate": 0.333,
+          "record": "1-2",
+          "games": 3
+        },
+        "Post-ASB to elimination": {
+          "win_rate": 0.25,
+          "record": "4-12",
+          "games": 16
+        },
+        "Post-elimination": {
+          "win_rate": 0.125,
+          "record": "1-7",
+          "games": 8
+        }
+      },
+      "trade_deadline": "2023-02-09",
+      "asb_date": "2023-02-17",
+      "elimination_date": "2023-03-27"
+    }
+  },
+  "supplemental": {
+    "draft_pick_incentive": {
+      "team_wins": 33,
+      "team_losses": 49,
+      "draft_position": 5,
+      "wins_gap_to_next_worse": 6,
+      "wins_gap_to_next_better": 1,
+      "bottom_5_cluster_size": 4,
+      "wins_to_exit_bottom_5": 1,
+      "bottom_5_cutoff_wins": 33,
+      "in_bottom_3": false,
+      "in_bottom_5": true
+    },
+    "margin_profile": {
+      "total_losses": 49,
+      "total_wins": 33,
+      "avg_loss_margin": -13.5,
+      "avg_win_margin": 10.2,
+      "blowout_losses": 19,
+      "blowout_loss_pct": 0.388,
+      "competitive_losses": 9,
+      "competitive_loss_pct": 0.184,
+      "first_half_net_rating": -0.3,
+      "second_half_net_rating": -7.7,
+      "trajectory": -7.4,
+      "pre_elim_avg_margin": -2.6,
+      "post_elim_avg_margin": -18.8,
+      "margin_asymmetry": -3.3
+    },
+    "veteran_shelving": {
+      "total_players_used": 24,
+      "regular_rotation_size": 9,
+      "barely_played_count": 10,
+      "barely_played": [
+        {
+          "player_name": "Gary Payton II",
+          "games": 15,
+          "avg_min": 17.0
+        },
+        {
+          "player_name": "Ryan Arcidiacono",
+          "games": 9,
+          "avg_min": 16.2
+        },
+        {
+          "player_name": "Shaquille Harrison",
+          "games": 5,
+          "avg_min": 24.0
+        },
+        {
+          "player_name": "Chance Comanche",
+          "games": 1,
+          "avg_min": 20.8
+        },
+        {
+          "player_name": "Cam Reddish",
+          "games": 20,
+          "avg_min": 27.6
+        },
+        {
+          "player_name": "Skylar Mays",
+          "games": 6,
+          "avg_min": 31.5
+        },
+        {
+          "player_name": "Greg Brown III",
+          "games": 16,
+          "avg_min": 5.8
+        },
+        {
+          "player_name": "John Butler Jr.",
+          "games": 19,
+          "avg_min": 11.6
+        },
+        {
+          "player_name": "Justin Minaya",
+          "games": 4,
+          "avg_min": 22.2
+        },
+        {
+          "player_name": "Nate Williams",
+          "games": 5,
+          "avg_min": 25.3
+        }
+      ],
+      "shelved_post_elim": [
+        {
+          "player_name": "Damian Lillard",
+          "pre_avg_min": 36.3,
+          "post_avg_min": 0,
+          "pre_games": 58,
+          "post_games": 0,
+          "minutes_drop": 36.3
+        },
+        {
+          "player_name": "Jerami Grant",
+          "pre_avg_min": 35.6,
+          "post_avg_min": 0,
+          "pre_games": 63,
+          "post_games": 0,
+          "minutes_drop": 35.6
+        },
+        {
+          "player_name": "Jusuf Nurki\u0107",
+          "pre_avg_min": 26.8,
+          "post_avg_min": 0,
+          "pre_games": 52,
+          "post_games": 0,
+          "minutes_drop": 26.8
+        },
+        {
+          "player_name": "Justise Winslow",
+          "pre_avg_min": 26.8,
+          "post_avg_min": 0,
+          "pre_games": 29,
+          "post_games": 0,
+          "minutes_drop": 26.8
+        },
+        {
+          "player_name": "Gary Payton II",
+          "pre_avg_min": 17.0,
+          "post_avg_min": 0,
+          "pre_games": 15,
+          "post_games": 0,
+          "minutes_drop": 17.0
+        },
+        {
+          "player_name": "Josh Hart",
+          "pre_avg_min": 33.4,
+          "post_avg_min": 0,
+          "pre_games": 51,
+          "post_games": 0,
+          "minutes_drop": 33.4
+        },
+        {
+          "player_name": "Anfernee Simons",
+          "pre_avg_min": 35.0,
+          "post_avg_min": 0,
+          "pre_games": 62,
+          "post_games": 0,
+          "minutes_drop": 35.0
+        }
+      ],
+      "shelved_count": 7,
+      "one_off_players": 2
+    },
+    "pace_manipulation": {
+      "season_avg_pace": 99.2,
+      "pace_std": 4.2,
+      "pace_cv": 4.2,
+      "first_20_pace": 97.1,
+      "last_20_pace": 101.8,
+      "pace_trajectory": 4.7,
+      "pre_elim_pace": 98.8,
+      "post_elim_pace": 103.9,
+      "pace_shift_at_elim": 5.1,
+      "league_avg_pace": 99.2
+    },
+    "lineup_overhaul": {
+      "trade_deadline": {
+        "date": "2023-02-09",
+        "total_departed": 4,
+        "meaningful_departed": 3,
+        "departed_players": [
+          {
+            "player_name": "Josh Hart",
+            "avg_min_before": 33.4
+          },
+          {
+            "player_name": "Gary Payton II",
+            "avg_min_before": 17.0
+          },
+          {
+            "player_name": "Justise Winslow",
+            "avg_min_before": 26.8
+          }
+        ],
+        "total_arrived": 9,
+        "meaningful_arrived": 9,
+        "arrived_players": [
+          {
+            "player_name": "Kevin Knox II",
+            "avg_min_after": 17.1
+          },
+          {
+            "player_name": "Justin Minaya",
+            "avg_min_after": 22.2
+          },
+          {
+            "player_name": "Nate Williams",
+            "avg_min_after": 25.3
+          },
+          {
+            "player_name": "Skylar Mays",
+            "avg_min_after": 31.5
+          },
+          {
+            "player_name": "Ryan Arcidiacono",
+            "avg_min_after": 16.2
+          },
+          {
+            "player_name": "Shaquille Harrison",
+            "avg_min_after": 24.0
+          },
+          {
+            "player_name": "Matisse Thybulle",
+            "avg_min_after": 27.7
+          },
+          {
+            "player_name": "Chance Comanche",
+            "avg_min_after": 20.8
+          },
+          {
+            "player_name": "Cam Reddish",
+            "avg_min_after": 27.6
+          }
+        ],
+        "roster_churn": 13
+      },
+      "roster_churn_overall": {
+        "total_unique_players": 24,
+        "first_half_unique": 15,
+        "second_half_unique": 23
+      }
+    }
+  },
+  "composite": {
+    "raw_scores": {
+      "SAS": 53.7,
+      "NRCI": 70.0,
+      "RIS": 80.0,
+      "BTCA": 77.3
+    },
+    "weighted_scores": {
+      "SAS": 16.1,
+      "NRCI": 17.5,
+      "RIS": 20.0,
+      "BTCA": 15.5
+    },
+    "composite_score": 69.1,
+    "classification": "Orange",
+    "expected_classification": "Orange/Red",
+    "match": true
+  },
+  "elimination": {
+    "elimination_date": "2023-03-27",
+    "elimination_game_number": 75,
+    "playoff_cutoff_wins": 40,
+    "playoff_cutoff_seed": 10,
+    "conference": "West",
+    "final_wins": null
+  }
+}

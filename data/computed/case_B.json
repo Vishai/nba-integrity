@@ -1,0 +1,595 @@
+{
+  "SAS": {
+    "qualified_players": [
+      {
+        "player_id": 202397,
+        "player_name": "Ish Smith",
+        "avg_minutes": 32.4,
+        "avg_pts": 14.7,
+        "games_played": 50,
+        "games_missed": 32,
+        "total_missed": 32,
+        "absent_from_log": 32,
+        "dnp_count": 0,
+        "post_elim_missed": 1,
+        "pre_elim_missed": 31,
+        "loss_games_missed": 30,
+        "win_games_missed": 2
+      },
+      {
+        "player_id": 1626143,
+        "player_name": "Jahlil Okafor",
+        "avg_minutes": 30.0,
+        "avg_pts": 17.5,
+        "games_played": 53,
+        "games_missed": 29,
+        "total_missed": 29,
+        "absent_from_log": 29,
+        "dnp_count": 0,
+        "post_elim_missed": 25,
+        "pre_elim_missed": 4,
+        "loss_games_missed": 25,
+        "win_games_missed": 4
+      },
+      {
+        "player_id": 203457,
+        "player_name": "Nerlens Noel",
+        "avg_minutes": 29.3,
+        "avg_pts": 11.1,
+        "games_played": 67,
+        "games_missed": 15,
+        "total_missed": 15,
+        "absent_from_log": 15,
+        "dnp_count": 0,
+        "post_elim_missed": 9,
+        "pre_elim_missed": 6,
+        "loss_games_missed": 15,
+        "win_games_missed": 0
+      },
+      {
+        "player_id": 203496,
+        "player_name": "Robert Covington",
+        "avg_minutes": 28.4,
+        "avg_pts": 12.8,
+        "games_played": 67,
+        "games_missed": 15,
+        "total_missed": 15,
+        "absent_from_log": 15,
+        "dnp_count": 0,
+        "post_elim_missed": 6,
+        "pre_elim_missed": 9,
+        "loss_games_missed": 15,
+        "win_games_missed": 0
+      },
+      {
+        "player_id": 203138,
+        "player_name": "Hollis Thompson",
+        "avg_minutes": 28.0,
+        "avg_pts": 9.8,
+        "games_played": 77,
+        "games_missed": 5,
+        "total_missed": 5,
+        "absent_from_log": 5,
+        "dnp_count": 0,
+        "post_elim_missed": 3,
+        "pre_elim_missed": 2,
+        "loss_games_missed": 5,
+        "win_games_missed": 0
+      },
+      {
+        "player_id": 203924,
+        "player_name": "Jerami Grant",
+        "avg_minutes": 26.8,
+        "avg_pts": 9.7,
+        "games_played": 77,
+        "games_missed": 5,
+        "total_missed": 5,
+        "absent_from_log": 5,
+        "dnp_count": 0,
+        "post_elim_missed": 3,
+        "pre_elim_missed": 2,
+        "loss_games_missed": 4,
+        "win_games_missed": 1
+      },
+      {
+        "player_id": 203477,
+        "player_name": "Isaiah Canaan",
+        "avg_minutes": 25.5,
+        "avg_pts": 11.0,
+        "games_played": 77,
+        "games_missed": 5,
+        "total_missed": 5,
+        "absent_from_log": 5,
+        "dnp_count": 0,
+        "post_elim_missed": 4,
+        "pre_elim_missed": 1,
+        "loss_games_missed": 5,
+        "win_games_missed": 0
+      }
+    ],
+    "absence_summary": {
+      "total_star_absences": 106,
+      "total_possible_appearances": 574,
+      "absence_rate": 0.185,
+      "num_qualified": 7
+    },
+    "clustering": {
+      "elimination_date": "2016-01-24",
+      "elimination_game_number": 45,
+      "pre_elim_games": 45,
+      "post_elim_games": 37,
+      "pre_elim_absences": 55,
+      "post_elim_absences": 51,
+      "pre_elim_absence_rate": 0.175,
+      "post_elim_absence_rate": 0.197,
+      "cluster_ratio": 1.13,
+      "flag": false
+    },
+    "distribution": {
+      "team_wins": 10,
+      "team_losses": 72,
+      "absences_in_losses": 99,
+      "absences_in_wins": 7,
+      "loss_absence_rate": 0.196,
+      "win_absence_rate": 0.1
+    },
+    "total_games": 82
+  },
+  "NRCI": {
+    "rolling_net_rating": {
+      "season_net_rating": -10.2,
+      "first_15_net_rating": -13.6,
+      "last_15_net_rating": -8.4,
+      "peak_rolling": -3.9,
+      "peak_game": 46,
+      "trough_rolling": -15.3,
+      "trough_game": 36,
+      "max_decline": 11.4,
+      "snapshots": [
+        {
+          "game_number": 15,
+          "rolling_net_rating": -13.6
+        },
+        {
+          "game_number": 25,
+          "rolling_net_rating": -12.1
+        },
+        {
+          "game_number": 35,
+          "rolling_net_rating": -13.5
+        },
+        {
+          "game_number": 45,
+          "rolling_net_rating": -5.6
+        },
+        {
+          "game_number": 55,
+          "rolling_net_rating": -6.1
+        },
+        {
+          "game_number": 65,
+          "rolling_net_rating": -9.3
+        },
+        {
+          "game_number": 75,
+          "rolling_net_rating": -10.2
+        }
+      ]
+    },
+    "q4_performance": {
+      "close_games": 28,
+      "close_wins": 4,
+      "close_losses": 24,
+      "close_game_win_pct": 0.143,
+      "blowout_losses": 24,
+      "blowout_loss_pct": 0.293
+    },
+    "pre_post_elim": {
+      "elimination_date": "2016-01-24",
+      "elimination_game": 45,
+      "pre_elim_games": 45,
+      "post_elim_games": 37,
+      "pre_elim_net_rating": -10.8,
+      "post_elim_net_rating": -9.6,
+      "net_rating_change": 1.2,
+      "pre_elim_off_rating": 95.8,
+      "post_elim_off_rating": 101.6,
+      "pre_elim_def_rating": 106.6,
+      "post_elim_def_rating": 111.2,
+      "collapse_flag": false
+    },
+    "opponent_adjusted": {}
+  },
+  "RIS": {
+    "baseline_rotation": {
+      "pre_elim_games": 45,
+      "total_pre_players": 16,
+      "top_8": [
+        {
+          "player_id": 202397,
+          "player_name": "Ish Smith",
+          "pre_avg_minutes": 31.0,
+          "pre_games": 14,
+          "pre_net_rating": -9.9,
+          "pre_usg": 0.288
+        },
+        {
+          "player_id": 1626143,
+          "player_name": "Jahlil Okafor",
+          "pre_avg_minutes": 28.1,
+          "pre_games": 45,
+          "pre_net_rating": -13.6,
+          "pre_usg": 0.248
+        },
+        {
+          "player_id": 203138,
+          "player_name": "Hollis Thompson",
+          "pre_avg_minutes": 25.4,
+          "pre_games": 45,
+          "pre_net_rating": -9.3,
+          "pre_usg": 0.144
+        },
+        {
+          "player_id": 203457,
+          "player_name": "Nerlens Noel",
+          "pre_avg_minutes": 25.3,
+          "pre_games": 45,
+          "pre_net_rating": -12.3,
+          "pre_usg": 0.155
+        },
+        {
+          "player_id": 203924,
+          "player_name": "Jerami Grant",
+          "pre_avg_minutes": 24.4,
+          "pre_games": 45,
+          "pre_net_rating": -10.5,
+          "pre_usg": 0.163
+        },
+        {
+          "player_id": 203477,
+          "player_name": "Isaiah Canaan",
+          "pre_avg_minutes": 24.3,
+          "pre_games": 45,
+          "pre_net_rating": -13.0,
+          "pre_usg": 0.185
+        },
+        {
+          "player_id": 204456,
+          "player_name": "T.J. McConnell",
+          "pre_avg_minutes": 21.2,
+          "pre_games": 45,
+          "pre_net_rating": -8.6,
+          "pre_usg": 0.165
+        },
+        {
+          "player_id": 203496,
+          "player_name": "Robert Covington",
+          "pre_avg_minutes": 21.1,
+          "pre_games": 45,
+          "pre_net_rating": -9.1,
+          "pre_usg": 0.17
+        }
+      ]
+    },
+    "post_elim_changes": {
+      "post_elim_games": 37,
+      "changes": [
+        {
+          "player_name": "Ish Smith",
+          "pre_avg_min": 31.0,
+          "post_avg_min": 32.1,
+          "min_change": 1.1,
+          "pct_change": 3.5,
+          "post_games": 37
+        },
+        {
+          "player_name": "Jahlil Okafor",
+          "pre_avg_min": 28.1,
+          "post_avg_min": 20.5,
+          "min_change": -7.6,
+          "pct_change": -27.0,
+          "post_games": 16
+        },
+        {
+          "player_name": "Hollis Thompson",
+          "pre_avg_min": 25.4,
+          "post_avg_min": 27.3,
+          "min_change": 1.9,
+          "pct_change": 7.5,
+          "post_games": 37
+        },
+        {
+          "player_name": "Nerlens Noel",
+          "pre_avg_min": 25.3,
+          "post_avg_min": 22.3,
+          "min_change": -3.0,
+          "pct_change": -11.9,
+          "post_games": 37
+        },
+        {
+          "player_name": "Jerami Grant",
+          "pre_avg_min": 24.4,
+          "post_avg_min": 26.2,
+          "min_change": 1.8,
+          "pct_change": 7.4,
+          "post_games": 37
+        },
+        {
+          "player_name": "Isaiah Canaan",
+          "pre_avg_min": 24.3,
+          "post_avg_min": 23.6,
+          "min_change": -0.7,
+          "pct_change": -2.9,
+          "post_games": 37
+        },
+        {
+          "player_name": "T.J. McConnell",
+          "pre_avg_min": 21.2,
+          "post_avg_min": 17.6,
+          "min_change": -3.6,
+          "pct_change": -17.0,
+          "post_games": 37
+        },
+        {
+          "player_name": "Robert Covington",
+          "pre_avg_min": 21.1,
+          "post_avg_min": 25.7,
+          "min_change": 4.6,
+          "pct_change": 21.8,
+          "post_games": 37
+        }
+      ],
+      "new_rotation_players": [
+        {
+          "player_name": "Nik Stauskas",
+          "post_avg_min": 25.6,
+          "post_games": 35
+        }
+      ],
+      "avg_minutes_change": -0.7,
+      "significant_decreases": 1,
+      "rotation_disruption_flag": false
+    },
+    "quality_correlation": {
+      "pre_elim_corr": -0.446,
+      "post_elim_corr": -0.391,
+      "correlation_shift": 0.056,
+      "meritocracy_decline_flag": false
+    },
+    "experimentation": {
+      "pre_avg_players_per_game": 12.8,
+      "post_avg_players_per_game": 12.9,
+      "pre_total_unique_players": 16,
+      "post_total_unique_players": 16,
+      "experimentation_increase": 0.1
+    }
+  },
+  "BTCA": {
+    "league_context": {
+      "team_wins": 10,
+      "team_losses": 72,
+      "team_record": "10-72",
+      "bottom_6_teams": [
+        [
+          "76ers",
+          10
+        ],
+        [
+          "Lakers",
+          17
+        ],
+        [
+          "Nets",
+          21
+        ],
+        [
+          "Suns",
+          23
+        ],
+        [
+          "Timberwolves",
+          29
+        ],
+        [
+          "Pelicans",
+          30
+        ]
+      ],
+      "bottom_6_wins": [
+        10,
+        17,
+        21,
+        23,
+        29,
+        30
+      ],
+      "historical_avg": 22.5,
+      "historical_std": 2.5,
+      "current_bottom6_avg": 21.7,
+      "deviation_from_baseline": -0.35,
+      "teams_under_22_wins": 3,
+      "league_wide_flag": false,
+      "seasons_analyzed": 20
+    },
+    "temporal_pattern": {
+      "pre_asb_win_pct": 0.151,
+      "pre_asb_record": "8-45",
+      "post_asb_win_pct": 0.069,
+      "post_asb_record": "2-27",
+      "post_as_pct_of_pre": 45.7,
+      "below_50_threshold": true,
+      "roster_talent_loss_clears_flag": false,
+      "flag": true,
+      "pre_asb_net_rating": -10.3,
+      "post_asb_net_rating": -10.1
+    },
+    "calendar_correlation": {
+      "periods": {
+        "Pre-trade deadline": {
+          "win_rate": 0.151,
+          "record": "8-45",
+          "games": 53
+        },
+        "Post-elimination": {
+          "win_rate": 0.105,
+          "record": "4-34",
+          "games": 38
+        }
+      },
+      "trade_deadline": "2016-02-18",
+      "asb_date": "2016-02-12",
+      "elimination_date": "2016-01-24"
+    }
+  },
+  "supplemental": {
+    "draft_pick_incentive": {
+      "team_wins": 10,
+      "team_losses": 72,
+      "draft_position": 1,
+      "wins_gap_to_next_worse": null,
+      "wins_gap_to_next_better": 7,
+      "bottom_5_cluster_size": 1,
+      "wins_to_exit_bottom_5": 20,
+      "bottom_5_cutoff_wins": 29,
+      "in_bottom_3": true,
+      "in_bottom_5": true
+    },
+    "margin_profile": {
+      "total_losses": 72,
+      "total_wins": 10,
+      "avg_loss_margin": -13.2,
+      "avg_win_margin": 11.1,
+      "blowout_losses": 24,
+      "blowout_loss_pct": 0.333,
+      "competitive_losses": 13,
+      "competitive_loss_pct": 0.181,
+      "first_half_net_rating": -12.1,
+      "second_half_net_rating": -8.4,
+      "trajectory": 3.7,
+      "pre_elim_avg_margin": -10.8,
+      "post_elim_avg_margin": -9.6,
+      "margin_asymmetry": -2.1
+    },
+    "veteran_shelving": {
+      "total_players_used": 18,
+      "regular_rotation_size": 10,
+      "barely_played_count": 5,
+      "barely_played": [
+        {
+          "player_name": "Elton Brand",
+          "games": 17,
+          "avg_min": 13.2
+        },
+        {
+          "player_name": "Sonny Weems",
+          "games": 7,
+          "avg_min": 11.1
+        },
+        {
+          "player_name": "Tony Wroten",
+          "games": 8,
+          "avg_min": 18.0
+        },
+        {
+          "player_name": "Phil Pressey",
+          "games": 14,
+          "avg_min": 12.1
+        },
+        {
+          "player_name": "Christian Wood",
+          "games": 17,
+          "avg_min": 8.5
+        }
+      ],
+      "shelved_post_elim": [
+        {
+          "player_name": "Tony Wroten",
+          "pre_avg_min": 18.0,
+          "post_avg_min": 0,
+          "pre_games": 8,
+          "post_games": 0,
+          "minutes_drop": 18.0
+        }
+      ],
+      "shelved_count": 1,
+      "one_off_players": 0
+    },
+    "pace_manipulation": {
+      "season_avg_pace": 98.5,
+      "pace_std": 4.0,
+      "pace_cv": 4.1,
+      "first_20_pace": 98.1,
+      "last_20_pace": 98.5,
+      "pace_trajectory": 0.4,
+      "pre_elim_pace": 97.8,
+      "post_elim_pace": 99.2,
+      "pace_shift_at_elim": 1.4,
+      "league_avg_pace": 98.5
+    },
+    "lineup_overhaul": {
+      "trade_deadline": {
+        "date": "2016-02-18",
+        "total_departed": 3,
+        "meaningful_departed": 3,
+        "departed_players": [
+          {
+            "player_name": "JaKarr Sampson",
+            "avg_min_before": 14.7
+          },
+          {
+            "player_name": "Phil Pressey",
+            "avg_min_before": 12.1
+          },
+          {
+            "player_name": "Tony Wroten",
+            "avg_min_before": 18.0
+          }
+        ],
+        "total_arrived": 2,
+        "meaningful_arrived": 2,
+        "arrived_players": [
+          {
+            "player_name": "Elton Brand",
+            "avg_min_after": 13.2
+          },
+          {
+            "player_name": "Sonny Weems",
+            "avg_min_after": 11.1
+          }
+        ],
+        "roster_churn": 5
+      },
+      "roster_churn_overall": {
+        "total_unique_players": 18,
+        "first_half_unique": 16,
+        "second_half_unique": 16
+      }
+    }
+  },
+  "composite": {
+    "raw_scores": {
+      "SAS": 39.9,
+      "NRCI": 54.2,
+      "RIS": 16.0,
+      "BTCA": 63.0
+    },
+    "weighted_scores": {
+      "SAS": 12.0,
+      "NRCI": 13.6,
+      "RIS": 4.0,
+      "BTCA": 12.6
+    },
+    "composite_score": 42.2,
+    "classification": "Yellow",
+    "expected_classification": "Red",
+    "match": false
+  },
+  "elimination": {
+    "elimination_date": "2016-01-24",
+    "elimination_game_number": 45,
+    "playoff_cutoff_wins": 44,
+    "playoff_cutoff_seed": 8,
+    "conference": "East",
+    "final_wins": null
+  }
+}

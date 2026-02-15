@@ -1,0 +1,387 @@
+{
+  "SAS": {
+    "qualified_players": [
+      {
+        "player_id": 1628983,
+        "player_name": "Shai Gilgeous-Alexander",
+        "avg_minutes": 34.0,
+        "avg_pts": 30.1,
+        "games_played": 75,
+        "games_missed": 7,
+        "total_missed": 7,
+        "absent_from_log": 7,
+        "dnp_count": 0,
+        "post_elim_missed": 0,
+        "pre_elim_missed": 0,
+        "loss_games_missed": 5,
+        "win_games_missed": 2
+      },
+      {
+        "player_id": 1631114,
+        "player_name": "Jalen Williams",
+        "avg_minutes": 31.3,
+        "avg_pts": 19.1,
+        "games_played": 71,
+        "games_missed": 11,
+        "total_missed": 11,
+        "absent_from_log": 11,
+        "dnp_count": 0,
+        "post_elim_missed": 0,
+        "pre_elim_missed": 0,
+        "loss_games_missed": 5,
+        "win_games_missed": 6
+      },
+      {
+        "player_id": 1631096,
+        "player_name": "Chet Holmgren",
+        "avg_minutes": 29.4,
+        "avg_pts": 16.5,
+        "games_played": 82,
+        "games_missed": 0,
+        "total_missed": 0,
+        "absent_from_log": 0,
+        "dnp_count": 0,
+        "post_elim_missed": 0,
+        "pre_elim_missed": 0,
+        "loss_games_missed": 0,
+        "win_games_missed": 0
+      },
+      {
+        "player_id": 1629652,
+        "player_name": "Luguentz Dort",
+        "avg_minutes": 28.4,
+        "avg_pts": 10.9,
+        "games_played": 79,
+        "games_missed": 3,
+        "total_missed": 3,
+        "absent_from_log": 3,
+        "dnp_count": 0,
+        "post_elim_missed": 0,
+        "pre_elim_missed": 0,
+        "loss_games_missed": 0,
+        "win_games_missed": 3
+      },
+      {
+        "player_id": 1630581,
+        "player_name": "Josh Giddey",
+        "avg_minutes": 25.1,
+        "avg_pts": 12.3,
+        "games_played": 80,
+        "games_missed": 2,
+        "total_missed": 2,
+        "absent_from_log": 2,
+        "dnp_count": 0,
+        "post_elim_missed": 0,
+        "pre_elim_missed": 0,
+        "loss_games_missed": 1,
+        "win_games_missed": 1
+      }
+    ],
+    "absence_summary": {
+      "total_star_absences": 23,
+      "total_possible_appearances": 410,
+      "absence_rate": 0.056,
+      "num_qualified": 5
+    },
+    "clustering": {
+      "note": "No elimination date \u2014 clustering N/A"
+    },
+    "distribution": {
+      "team_wins": 57,
+      "team_losses": 25,
+      "absences_in_losses": 11,
+      "absences_in_wins": 12,
+      "loss_absence_rate": 0.088,
+      "win_absence_rate": 0.042
+    },
+    "total_games": 82
+  },
+  "NRCI": {
+    "rolling_net_rating": {
+      "season_net_rating": 7.1,
+      "first_15_net_rating": 9.0,
+      "last_15_net_rating": 5.5,
+      "peak_rolling": 12.6,
+      "peak_game": 38,
+      "trough_rolling": -0.7,
+      "trough_game": 79,
+      "max_decline": 13.3,
+      "snapshots": [
+        {
+          "game_number": 15,
+          "rolling_net_rating": 9.0
+        },
+        {
+          "game_number": 25,
+          "rolling_net_rating": 11.1
+        },
+        {
+          "game_number": 35,
+          "rolling_net_rating": 7.6
+        },
+        {
+          "game_number": 45,
+          "rolling_net_rating": 9.2
+        },
+        {
+          "game_number": 55,
+          "rolling_net_rating": 5.8
+        },
+        {
+          "game_number": 65,
+          "rolling_net_rating": 5.8
+        },
+        {
+          "game_number": 75,
+          "rolling_net_rating": 3.8
+        }
+      ]
+    },
+    "q4_performance": {
+      "close_games": 35,
+      "close_wins": 22,
+      "close_losses": 13,
+      "close_game_win_pct": 0.629,
+      "blowout_losses": 5,
+      "blowout_loss_pct": 0.061
+    },
+    "pre_post_elim": {
+      "note": "No elimination date \u2014 split N/A"
+    },
+    "opponent_adjusted": {}
+  },
+  "RIS": {},
+  "BTCA": {
+    "league_context": {
+      "team_wins": 57,
+      "team_losses": 25,
+      "team_record": "57-25",
+      "bottom_6_teams": [
+        [
+          "Pistons",
+          14
+        ],
+        [
+          "Wizards",
+          15
+        ],
+        [
+          "Trail Blazers",
+          21
+        ],
+        [
+          "Hornets",
+          21
+        ],
+        [
+          "Spurs",
+          22
+        ],
+        [
+          "Raptors",
+          25
+        ]
+      ],
+      "bottom_6_wins": [
+        14,
+        15,
+        21,
+        21,
+        22,
+        25
+      ],
+      "historical_avg": 22.5,
+      "historical_std": 2.5,
+      "current_bottom6_avg": 19.7,
+      "deviation_from_baseline": -1.15,
+      "teams_under_22_wins": 4,
+      "league_wide_flag": true,
+      "seasons_analyzed": 20
+    },
+    "temporal_pattern": {
+      "pre_asb_win_pct": 0.685,
+      "pre_asb_record": "37-17",
+      "post_asb_win_pct": 0.714,
+      "post_asb_record": "20-8",
+      "post_as_pct_of_pre": 104.2,
+      "below_50_threshold": false,
+      "roster_talent_loss_clears_flag": false,
+      "flag": false,
+      "pre_asb_net_rating": 7.3,
+      "post_asb_net_rating": 7.2
+    },
+    "calendar_correlation": {
+      "periods": {
+        "Pre-trade deadline": {
+          "win_rate": 0.686,
+          "record": "35-16",
+          "games": 51
+        },
+        "Post-deadline to ASB": {
+          "win_rate": 0.667,
+          "record": "2-1",
+          "games": 3
+        },
+        "Post-ASB": {
+          "win_rate": 0.714,
+          "record": "20-8",
+          "games": 28
+        }
+      },
+      "trade_deadline": "2024-02-08",
+      "asb_date": "2024-02-16",
+      "elimination_date": null
+    }
+  },
+  "supplemental": {
+    "draft_pick_incentive": {
+      "team_wins": 57,
+      "team_losses": 25,
+      "draft_position": 28,
+      "wins_gap_to_next_worse": 1,
+      "wins_gap_to_next_better": 0,
+      "bottom_5_cluster_size": 3,
+      "wins_to_exit_bottom_5": 0,
+      "bottom_5_cutoff_wins": 22,
+      "in_bottom_3": false,
+      "in_bottom_5": false
+    },
+    "margin_profile": {
+      "total_losses": 25,
+      "total_wins": 57,
+      "avg_loss_margin": -11.8,
+      "avg_win_margin": 15.4,
+      "blowout_losses": 5,
+      "blowout_loss_pct": 0.2,
+      "competitive_losses": 7,
+      "competitive_loss_pct": 0.28,
+      "first_half_net_rating": 8.1,
+      "second_half_net_rating": 6.2,
+      "trajectory": -1.9,
+      "pre_elim_avg_margin": null,
+      "post_elim_avg_margin": null,
+      "margin_asymmetry": 3.6
+    },
+    "veteran_shelving": {
+      "total_players_used": 22,
+      "regular_rotation_size": 8,
+      "barely_played_count": 9,
+      "barely_played": [
+        {
+          "player_name": "Bismack Biyombo",
+          "games": 10,
+          "avg_min": 7.3
+        },
+        {
+          "player_name": "Davis Bertans",
+          "games": 15,
+          "avg_min": 6.1
+        },
+        {
+          "player_name": "Mike Muscala",
+          "games": 16,
+          "avg_min": 5.7
+        },
+        {
+          "player_name": "Aleksej Pokusevski",
+          "games": 10,
+          "avg_min": 6.0
+        },
+        {
+          "player_name": "Lindy Waters III",
+          "games": 38,
+          "avg_min": 7.4
+        },
+        {
+          "player_name": "Tre Mann",
+          "games": 13,
+          "avg_min": 9.2
+        },
+        {
+          "player_name": "Olivier Sarr",
+          "games": 15,
+          "avg_min": 6.5
+        },
+        {
+          "player_name": "Adam Flagler",
+          "games": 2,
+          "avg_min": 7.0
+        },
+        {
+          "player_name": "Keyontae Johnson",
+          "games": 9,
+          "avg_min": 7.4
+        }
+      ],
+      "shelved_post_elim": [],
+      "shelved_count": 0,
+      "one_off_players": 1
+    },
+    "pace_manipulation": {
+      "season_avg_pace": 100.9,
+      "pace_std": 4.1,
+      "pace_cv": 4.1,
+      "first_20_pace": 101.0,
+      "last_20_pace": 100.5,
+      "pace_trajectory": -0.5,
+      "pre_elim_pace": null,
+      "post_elim_pace": null,
+      "pace_shift_at_elim": null,
+      "league_avg_pace": 102.0
+    },
+    "lineup_overhaul": {
+      "trade_deadline": {
+        "date": "2024-02-08",
+        "total_departed": 3,
+        "meaningful_departed": 1,
+        "departed_players": [
+          {
+            "player_name": "Vasilije Micic",
+            "avg_min_before": 12.0
+          }
+        ],
+        "total_arrived": 4,
+        "meaningful_arrived": 1,
+        "arrived_players": [
+          {
+            "player_name": "Gordon Hayward",
+            "avg_min_after": 17.2
+          }
+        ],
+        "roster_churn": 7
+      },
+      "roster_churn_overall": {
+        "total_unique_players": 22,
+        "first_half_unique": 18,
+        "second_half_unique": 21
+      }
+    }
+  },
+  "composite": {
+    "raw_scores": {
+      "SAS": 30.0,
+      "NRCI": 29.9,
+      "RIS": 0.0,
+      "BTCA": 17.2
+    },
+    "weighted_scores": {
+      "SAS": 9.0,
+      "NRCI": 7.5,
+      "RIS": 0.0,
+      "BTCA": 3.4
+    },
+    "composite_score": 19.9,
+    "classification": "Green",
+    "expected_classification": "Yellow",
+    "match": false
+  },
+  "elimination": {
+    "elimination_date": null,
+    "elimination_game_number": null,
+    "playoff_cutoff_wins": 46,
+    "playoff_cutoff_seed": 10,
+    "conference": "West",
+    "final_wins": 57,
+    "note": "Team finished 57-25, cutoff was 46 wins (seed 10). Not mathematically eliminated (or eliminated on final game)."
+  }
+}

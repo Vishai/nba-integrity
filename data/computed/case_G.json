@@ -1,0 +1,689 @@
+{
+  "SAS": {
+    "qualified_players": [
+      {
+        "player_id": 203952,
+        "player_name": "Andrew Wiggins",
+        "avg_minutes": 33.6,
+        "avg_pts": 19.4,
+        "games_played": 12,
+        "games_missed": 53,
+        "total_missed": 53,
+        "absent_from_log": 53,
+        "dnp_count": 0,
+        "post_elim_missed": 13,
+        "pre_elim_missed": 40,
+        "loss_games_missed": 41,
+        "win_games_missed": 12
+      },
+      {
+        "player_id": 1626156,
+        "player_name": "D'Angelo Russell",
+        "avg_minutes": 32.1,
+        "avg_pts": 23.6,
+        "games_played": 33,
+        "games_missed": 32,
+        "total_missed": 32,
+        "absent_from_log": 32,
+        "dnp_count": 0,
+        "post_elim_missed": 14,
+        "pre_elim_missed": 18,
+        "loss_games_missed": 25,
+        "win_games_missed": 7
+      },
+      {
+        "player_id": 203922,
+        "player_name": "Glenn Robinson III",
+        "avg_minutes": 31.6,
+        "avg_pts": 12.9,
+        "games_played": 48,
+        "games_missed": 17,
+        "total_missed": 17,
+        "absent_from_log": 17,
+        "dnp_count": 0,
+        "post_elim_missed": 16,
+        "pre_elim_missed": 1,
+        "loss_games_missed": 12,
+        "win_games_missed": 5
+      },
+      {
+        "player_id": 1628539,
+        "player_name": "Mychal Mulder",
+        "avg_minutes": 29.1,
+        "avg_pts": 11.0,
+        "games_played": 7,
+        "games_missed": 58,
+        "total_missed": 58,
+        "absent_from_log": 58,
+        "dnp_count": 0,
+        "post_elim_missed": 18,
+        "pre_elim_missed": 40,
+        "loss_games_missed": 46,
+        "win_games_missed": 12
+      },
+      {
+        "player_id": 1627814,
+        "player_name": "Damion Lee",
+        "avg_minutes": 29.0,
+        "avg_pts": 12.7,
+        "games_played": 49,
+        "games_missed": 16,
+        "total_missed": 16,
+        "absent_from_log": 16,
+        "dnp_count": 0,
+        "post_elim_missed": 2,
+        "pre_elim_missed": 14,
+        "loss_games_missed": 13,
+        "win_games_missed": 3
+      },
+      {
+        "player_id": 202692,
+        "player_name": "Alec Burks",
+        "avg_minutes": 29.0,
+        "avg_pts": 16.1,
+        "games_played": 48,
+        "games_missed": 17,
+        "total_missed": 17,
+        "absent_from_log": 17,
+        "dnp_count": 0,
+        "post_elim_missed": 14,
+        "pre_elim_missed": 3,
+        "loss_games_missed": 13,
+        "win_games_missed": 4
+      },
+      {
+        "player_id": 203110,
+        "player_name": "Draymond Green",
+        "avg_minutes": 28.4,
+        "avg_pts": 8.0,
+        "games_played": 43,
+        "games_missed": 22,
+        "total_missed": 22,
+        "absent_from_log": 22,
+        "dnp_count": 0,
+        "post_elim_missed": 11,
+        "pre_elim_missed": 11,
+        "loss_games_missed": 17,
+        "win_games_missed": 5
+      },
+      {
+        "player_id": 201939,
+        "player_name": "Stephen Curry",
+        "avg_minutes": 27.9,
+        "avg_pts": 20.8,
+        "games_played": 5,
+        "games_missed": 60,
+        "total_missed": 60,
+        "absent_from_log": 60,
+        "dnp_count": 0,
+        "post_elim_missed": 24,
+        "pre_elim_missed": 36,
+        "loss_games_missed": 46,
+        "win_games_missed": 14
+      },
+      {
+        "player_id": 1629672,
+        "player_name": "Eric Paschall",
+        "avg_minutes": 27.6,
+        "avg_pts": 13.9,
+        "games_played": 60,
+        "games_missed": 5,
+        "total_missed": 5,
+        "absent_from_log": 5,
+        "dnp_count": 0,
+        "post_elim_missed": 0,
+        "pre_elim_missed": 5,
+        "loss_games_missed": 4,
+        "win_games_missed": 1
+      }
+    ],
+    "absence_summary": {
+      "total_star_absences": 280,
+      "total_possible_appearances": 585,
+      "absence_rate": 0.479,
+      "num_qualified": 9
+    },
+    "clustering": {
+      "elimination_date": "2020-01-12",
+      "elimination_game_number": 41,
+      "pre_elim_games": 41,
+      "post_elim_games": 24,
+      "pre_elim_absences": 168,
+      "post_elim_absences": 112,
+      "pre_elim_absence_rate": 0.455,
+      "post_elim_absence_rate": 0.519,
+      "cluster_ratio": 1.14,
+      "flag": false
+    },
+    "distribution": {
+      "team_wins": 15,
+      "team_losses": 50,
+      "absences_in_losses": 217,
+      "absences_in_wins": 63,
+      "loss_absence_rate": 0.482,
+      "win_absence_rate": 0.467
+    },
+    "total_games": 65
+  },
+  "NRCI": {
+    "rolling_net_rating": {
+      "season_net_rating": -8.7,
+      "first_15_net_rating": -8.5,
+      "last_15_net_rating": -9.6,
+      "peak_rolling": -4.3,
+      "peak_game": 33,
+      "trough_rolling": -13.2,
+      "trough_game": 59,
+      "max_decline": 8.9,
+      "snapshots": [
+        {
+          "game_number": 15,
+          "rolling_net_rating": -8.5
+        },
+        {
+          "game_number": 25,
+          "rolling_net_rating": -10.2
+        },
+        {
+          "game_number": 35,
+          "rolling_net_rating": -5.6
+        },
+        {
+          "game_number": 45,
+          "rolling_net_rating": -6.0
+        },
+        {
+          "game_number": 55,
+          "rolling_net_rating": -9.7
+        },
+        {
+          "game_number": 65,
+          "rolling_net_rating": -9.6
+        }
+      ]
+    },
+    "q4_performance": {
+      "close_games": 21,
+      "close_wins": 4,
+      "close_losses": 17,
+      "close_game_win_pct": 0.19,
+      "blowout_losses": 20,
+      "blowout_loss_pct": 0.308
+    },
+    "pre_post_elim": {
+      "elimination_date": "2020-01-12",
+      "elimination_game": 41,
+      "pre_elim_games": 41,
+      "post_elim_games": 24,
+      "pre_elim_net_rating": -8.5,
+      "post_elim_net_rating": -9.0,
+      "net_rating_change": -0.5,
+      "pre_elim_off_rating": 102.6,
+      "post_elim_off_rating": 107.3,
+      "pre_elim_def_rating": 111.1,
+      "post_elim_def_rating": 116.3,
+      "collapse_flag": false
+    },
+    "opponent_adjusted": {}
+  },
+  "RIS": {
+    "baseline_rotation": {
+      "pre_elim_games": 41,
+      "total_pre_players": 15,
+      "top_8": [
+        {
+          "player_id": 203922,
+          "player_name": "Glenn Robinson III",
+          "pre_avg_minutes": 31.8,
+          "pre_games": 40,
+          "pre_net_rating": -10.5,
+          "pre_usg": 0.16
+        },
+        {
+          "player_id": 202692,
+          "player_name": "Alec Burks",
+          "pre_avg_minutes": 29.1,
+          "pre_games": 38,
+          "pre_net_rating": -10.3,
+          "pre_usg": 0.223
+        },
+        {
+          "player_id": 201939,
+          "player_name": "Stephen Curry",
+          "pre_avg_minutes": 28.0,
+          "pre_games": 4,
+          "pre_net_rating": -16.1,
+          "pre_usg": 0.297
+        },
+        {
+          "player_id": 1627814,
+          "player_name": "Damion Lee",
+          "pre_avg_minutes": 26.8,
+          "pre_games": 26,
+          "pre_net_rating": -3.8,
+          "pre_usg": 0.189
+        },
+        {
+          "player_id": 1629672,
+          "player_name": "Eric Paschall",
+          "pre_avg_minutes": 25.0,
+          "pre_games": 39,
+          "pre_net_rating": -10.7,
+          "pre_usg": 0.185
+        },
+        {
+          "player_id": 203110,
+          "player_name": "Draymond Green",
+          "pre_avg_minutes": 24.2,
+          "pre_games": 36,
+          "pre_net_rating": -9.1,
+          "pre_usg": 0.136
+        },
+        {
+          "player_id": 1626161,
+          "player_name": "Willie Cauley-Stein",
+          "pre_avg_minutes": 22.7,
+          "pre_games": 36,
+          "pre_net_rating": -8.4,
+          "pre_usg": 0.154
+        },
+        {
+          "player_id": 1629065,
+          "player_name": "Ky Bowman",
+          "pre_avg_minutes": 22.5,
+          "pre_games": 36,
+          "pre_net_rating": -5.3,
+          "pre_usg": 0.162
+        }
+      ]
+    },
+    "post_elim_changes": {
+      "post_elim_games": 24,
+      "changes": [
+        {
+          "player_name": "Glenn Robinson III",
+          "pre_avg_min": 31.8,
+          "post_avg_min": 22.1,
+          "min_change": -9.7,
+          "pct_change": -30.5,
+          "post_games": 11
+        },
+        {
+          "player_name": "Alec Burks",
+          "pre_avg_min": 29.1,
+          "post_avg_min": 26.0,
+          "min_change": -3.1,
+          "pct_change": -10.7,
+          "post_games": 11
+        },
+        {
+          "player_name": "Stephen Curry",
+          "pre_avg_min": 28.0,
+          "post_avg_min": 9.1,
+          "min_change": -18.9,
+          "pct_change": -67.5,
+          "post_games": 3
+        },
+        {
+          "player_name": "Damion Lee",
+          "pre_avg_min": 26.8,
+          "post_avg_min": 31.6,
+          "min_change": 4.8,
+          "pct_change": 17.9,
+          "post_games": 23
+        },
+        {
+          "player_name": "Eric Paschall",
+          "pre_avg_min": 25.0,
+          "post_avg_min": 28.3,
+          "min_change": 3.3,
+          "pct_change": 13.2,
+          "post_games": 24
+        },
+        {
+          "player_name": "Draymond Green",
+          "pre_avg_min": 24.2,
+          "post_avg_min": 15.9,
+          "min_change": -8.3,
+          "pct_change": -34.3,
+          "post_games": 22
+        },
+        {
+          "player_name": "Willie Cauley-Stein",
+          "pre_avg_min": 22.7,
+          "post_avg_min": 20.3,
+          "min_change": -2.4,
+          "pct_change": -10.6,
+          "post_games": 6
+        },
+        {
+          "player_name": "Ky Bowman",
+          "pre_avg_min": 22.5,
+          "post_avg_min": 15.8,
+          "min_change": -6.7,
+          "pct_change": -29.8,
+          "post_games": 13
+        }
+      ],
+      "new_rotation_players": [
+        {
+          "player_name": "Andrew Wiggins",
+          "post_avg_min": 31.0,
+          "post_games": 13
+        },
+        {
+          "player_name": "D'Angelo Russell",
+          "post_avg_min": 30.5,
+          "post_games": 11
+        },
+        {
+          "player_name": "Mychal Mulder",
+          "post_avg_min": 29.1,
+          "post_games": 7
+        },
+        {
+          "player_name": "Marquese Chriss",
+          "post_avg_min": 23.5,
+          "post_games": 23
+        },
+        {
+          "player_name": "Jordan Poole",
+          "post_avg_min": 23.0,
+          "post_games": 24
+        }
+      ],
+      "avg_minutes_change": -5.1,
+      "significant_decreases": 4,
+      "rotation_disruption_flag": true
+    },
+    "quality_correlation": {
+      "pre_elim_corr": -0.09,
+      "post_elim_corr": 0.153,
+      "correlation_shift": 0.244,
+      "meritocracy_decline_flag": false
+    },
+    "experimentation": {
+      "pre_avg_players_per_game": 11.4,
+      "post_avg_players_per_game": 11.2,
+      "pre_total_unique_players": 15,
+      "post_total_unique_players": 22,
+      "experimentation_increase": -0.2
+    }
+  },
+  "BTCA": {
+    "league_context": {
+      "team_wins": 15,
+      "team_losses": 50,
+      "team_record": "15-50",
+      "bottom_6_teams": [
+        [
+          "Warriors",
+          15
+        ],
+        [
+          "Cavaliers",
+          19
+        ],
+        [
+          "Timberwolves",
+          19
+        ],
+        [
+          "Hawks",
+          20
+        ],
+        [
+          "Pistons",
+          20
+        ],
+        [
+          "Knicks",
+          21
+        ]
+      ],
+      "bottom_6_wins": [
+        15,
+        19,
+        19,
+        20,
+        20,
+        21
+      ],
+      "historical_avg": 22.5,
+      "historical_std": 2.5,
+      "current_bottom6_avg": 19.0,
+      "deviation_from_baseline": -1.42,
+      "teams_under_22_wins": 6,
+      "league_wide_flag": true,
+      "seasons_analyzed": 20
+    },
+    "temporal_pattern": {
+      "pre_asb_win_pct": 0.218,
+      "pre_asb_record": "12-43",
+      "post_asb_win_pct": 0.3,
+      "post_asb_record": "3-7",
+      "post_as_pct_of_pre": 137.6,
+      "below_50_threshold": false,
+      "roster_talent_loss_clears_flag": false,
+      "flag": false,
+      "pre_asb_net_rating": -8.5,
+      "post_asb_net_rating": -9.2
+    },
+    "calendar_correlation": {
+      "periods": {
+        "Pre-trade deadline": {
+          "win_rate": 0.231,
+          "record": "12-40",
+          "games": 52
+        },
+        "Post-deadline to ASB": {
+          "win_rate": 0.0,
+          "record": "0-3",
+          "games": 3
+        },
+        "Post-elimination": {
+          "win_rate": 0.24,
+          "record": "6-19",
+          "games": 25
+        }
+      },
+      "trade_deadline": "2020-02-06",
+      "asb_date": "2020-02-14",
+      "elimination_date": "2020-01-12"
+    }
+  },
+  "supplemental": {
+    "draft_pick_incentive": {
+      "team_wins": 15,
+      "team_losses": 50,
+      "draft_position": 1,
+      "wins_gap_to_next_worse": null,
+      "wins_gap_to_next_better": 4,
+      "bottom_5_cluster_size": 1,
+      "wins_to_exit_bottom_5": 6,
+      "bottom_5_cutoff_wins": 20,
+      "in_bottom_3": true,
+      "in_bottom_5": true
+    },
+    "margin_profile": {
+      "total_losses": 50,
+      "total_wins": 15,
+      "avg_loss_margin": -14.5,
+      "avg_win_margin": 10.9,
+      "blowout_losses": 20,
+      "blowout_loss_pct": 0.4,
+      "competitive_losses": 5,
+      "competitive_loss_pct": 0.1,
+      "first_half_net_rating": -8.1,
+      "second_half_net_rating": -9.2,
+      "trajectory": -1.1,
+      "pre_elim_avg_margin": -8.5,
+      "post_elim_avg_margin": -9.0,
+      "margin_asymmetry": -3.6
+    },
+    "veteran_shelving": {
+      "total_players_used": 22,
+      "regular_rotation_size": 12,
+      "barely_played_count": 9,
+      "barely_played": [
+        {
+          "player_name": "Stephen Curry",
+          "games": 5,
+          "avg_min": 27.9
+        },
+        {
+          "player_name": "Jeremy Pargo",
+          "games": 3,
+          "avg_min": 14.8
+        },
+        {
+          "player_name": "Andrew Wiggins",
+          "games": 12,
+          "avg_min": 33.6
+        },
+        {
+          "player_name": "Chasson Randle",
+          "games": 3,
+          "avg_min": 13.5
+        },
+        {
+          "player_name": "Dragan Bender",
+          "games": 9,
+          "avg_min": 21.6
+        },
+        {
+          "player_name": "Mychal Mulder",
+          "games": 7,
+          "avg_min": 29.1
+        },
+        {
+          "player_name": "Juan Toscano-Anderson",
+          "games": 13,
+          "avg_min": 20.9
+        },
+        {
+          "player_name": "Alen Smailagic",
+          "games": 14,
+          "avg_min": 9.9
+        },
+        {
+          "player_name": "Zach Norvell Jr.",
+          "games": 3,
+          "avg_min": 12.0
+        }
+      ],
+      "shelved_post_elim": [],
+      "shelved_count": 0,
+      "one_off_players": 3
+    },
+    "pace_manipulation": {
+      "season_avg_pace": 101.0,
+      "pace_std": 4.3,
+      "pace_cv": 4.3,
+      "first_20_pace": 101.4,
+      "last_20_pace": 101.1,
+      "pace_trajectory": -0.3,
+      "pre_elim_pace": 101.0,
+      "post_elim_pace": 101.1,
+      "pace_shift_at_elim": 0.1,
+      "league_avg_pace": 101.0
+    },
+    "lineup_overhaul": {
+      "trade_deadline": {
+        "date": "2020-02-06",
+        "total_departed": 6,
+        "meaningful_departed": 6,
+        "departed_players": [
+          {
+            "player_name": "Alec Burks",
+            "avg_min_before": 29.0
+          },
+          {
+            "player_name": "D'Angelo Russell",
+            "avg_min_before": 32.1
+          },
+          {
+            "player_name": "Willie Cauley-Stein",
+            "avg_min_before": 22.9
+          },
+          {
+            "player_name": "Glenn Robinson III",
+            "avg_min_before": 31.6
+          },
+          {
+            "player_name": "Jacob Evans",
+            "avg_min_before": 15.3
+          },
+          {
+            "player_name": "Omari Spellman",
+            "avg_min_before": 18.1
+          }
+        ],
+        "total_arrived": 7,
+        "meaningful_arrived": 7,
+        "arrived_players": [
+          {
+            "player_name": "Zach Norvell Jr.",
+            "avg_min_after": 12.0
+          },
+          {
+            "player_name": "Jeremy Pargo",
+            "avg_min_after": 14.8
+          },
+          {
+            "player_name": "Chasson Randle",
+            "avg_min_after": 13.5
+          },
+          {
+            "player_name": "Andrew Wiggins",
+            "avg_min_after": 33.6
+          },
+          {
+            "player_name": "Dragan Bender",
+            "avg_min_after": 21.6
+          },
+          {
+            "player_name": "Mychal Mulder",
+            "avg_min_after": 29.1
+          },
+          {
+            "player_name": "Juan Toscano-Anderson",
+            "avg_min_after": 20.9
+          }
+        ],
+        "roster_churn": 13
+      },
+      "roster_churn_overall": {
+        "total_unique_players": 22,
+        "first_half_unique": 14,
+        "second_half_unique": 22
+      }
+    }
+  },
+  "composite": {
+    "raw_scores": {
+      "SAS": 32.5,
+      "NRCI": 48.4,
+      "RIS": 47.5,
+      "BTCA": 37.3
+    },
+    "weighted_scores": {
+      "SAS": 9.8,
+      "NRCI": 12.1,
+      "RIS": 11.9,
+      "BTCA": 7.5
+    },
+    "composite_score": 41.3,
+    "classification": "Yellow",
+    "expected_classification": "Green",
+    "match": false
+  },
+  "elimination": {
+    "elimination_date": "2020-01-12",
+    "elimination_game_number": 41,
+    "playoff_cutoff_wins": 34,
+    "playoff_cutoff_seed": 10,
+    "conference": "West",
+    "final_wins": null
+  }
+}

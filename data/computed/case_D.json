@@ -1,0 +1,629 @@
+{
+  "SAS": {
+    "qualified_players": [
+      {
+        "player_id": 1628398,
+        "player_name": "Kyle Kuzma",
+        "avg_minutes": 32.6,
+        "avg_pts": 22.2,
+        "games_played": 70,
+        "games_missed": 12,
+        "total_missed": 12,
+        "absent_from_log": 12,
+        "dnp_count": 0,
+        "post_elim_missed": 10,
+        "pre_elim_missed": 2,
+        "loss_games_missed": 10,
+        "win_games_missed": 2
+      },
+      {
+        "player_id": 1630166,
+        "player_name": "Deni Avdija",
+        "avg_minutes": 30.1,
+        "avg_pts": 14.7,
+        "games_played": 75,
+        "games_missed": 7,
+        "total_missed": 7,
+        "absent_from_log": 7,
+        "dnp_count": 0,
+        "post_elim_missed": 7,
+        "pre_elim_missed": 0,
+        "loss_games_missed": 6,
+        "win_games_missed": 1
+      },
+      {
+        "player_id": 1629673,
+        "player_name": "Jordan Poole",
+        "avg_minutes": 30.1,
+        "avg_pts": 17.4,
+        "games_played": 78,
+        "games_missed": 4,
+        "total_missed": 4,
+        "absent_from_log": 4,
+        "dnp_count": 0,
+        "post_elim_missed": 2,
+        "pre_elim_missed": 2,
+        "loss_games_missed": 4,
+        "win_games_missed": 0
+      },
+      {
+        "player_id": 1626145,
+        "player_name": "Tyus Jones",
+        "avg_minutes": 29.3,
+        "avg_pts": 12.0,
+        "games_played": 66,
+        "games_missed": 16,
+        "total_missed": 16,
+        "absent_from_log": 16,
+        "dnp_count": 0,
+        "post_elim_missed": 16,
+        "pre_elim_missed": 0,
+        "loss_games_missed": 12,
+        "win_games_missed": 4
+      },
+      {
+        "player_id": 1641731,
+        "player_name": "Bilal Coulibaly",
+        "avg_minutes": 27.2,
+        "avg_pts": 8.4,
+        "games_played": 63,
+        "games_missed": 19,
+        "total_missed": 19,
+        "absent_from_log": 19,
+        "dnp_count": 0,
+        "post_elim_missed": 18,
+        "pre_elim_missed": 1,
+        "loss_games_missed": 15,
+        "win_games_missed": 4
+      },
+      {
+        "player_id": 1629655,
+        "player_name": "Daniel Gafford",
+        "avg_minutes": 26.5,
+        "avg_pts": 10.9,
+        "games_played": 45,
+        "games_missed": 37,
+        "total_missed": 37,
+        "absent_from_log": 37,
+        "dnp_count": 0,
+        "post_elim_missed": 27,
+        "pre_elim_missed": 10,
+        "loss_games_missed": 31,
+        "win_games_missed": 6
+      },
+      {
+        "player_id": 1630557,
+        "player_name": "Corey Kispert",
+        "avg_minutes": 25.8,
+        "avg_pts": 13.4,
+        "games_played": 80,
+        "games_missed": 2,
+        "total_missed": 2,
+        "absent_from_log": 2,
+        "dnp_count": 0,
+        "post_elim_missed": 1,
+        "pre_elim_missed": 1,
+        "loss_games_missed": 2,
+        "win_games_missed": 0
+      }
+    ],
+    "absence_summary": {
+      "total_star_absences": 97,
+      "total_possible_appearances": 574,
+      "absence_rate": 0.169,
+      "num_qualified": 7
+    },
+    "clustering": {
+      "elimination_date": "2024-02-23",
+      "elimination_game_number": 56,
+      "pre_elim_games": 56,
+      "post_elim_games": 26,
+      "pre_elim_absences": 16,
+      "post_elim_absences": 81,
+      "pre_elim_absence_rate": 0.041,
+      "post_elim_absence_rate": 0.445,
+      "cluster_ratio": 10.9,
+      "flag": true
+    },
+    "distribution": {
+      "team_wins": 15,
+      "team_losses": 67,
+      "absences_in_losses": 80,
+      "absences_in_wins": 17,
+      "loss_absence_rate": 0.171,
+      "win_absence_rate": 0.162
+    },
+    "total_games": 82
+  },
+  "NRCI": {
+    "rolling_net_rating": {
+      "season_net_rating": -8.7,
+      "first_15_net_rating": -7.9,
+      "last_15_net_rating": -6.0,
+      "peak_rolling": -4.8,
+      "peak_game": 52,
+      "trough_rolling": -14.0,
+      "trough_game": 35,
+      "max_decline": 8.5,
+      "snapshots": [
+        {
+          "game_number": 15,
+          "rolling_net_rating": -7.9
+        },
+        {
+          "game_number": 25,
+          "rolling_net_rating": -11.3
+        },
+        {
+          "game_number": 35,
+          "rolling_net_rating": -14.0
+        },
+        {
+          "game_number": 45,
+          "rolling_net_rating": -6.8
+        },
+        {
+          "game_number": 55,
+          "rolling_net_rating": -7.6
+        },
+        {
+          "game_number": 65,
+          "rolling_net_rating": -8.9
+        },
+        {
+          "game_number": 75,
+          "rolling_net_rating": -8.0
+        }
+      ]
+    },
+    "q4_performance": {
+      "close_games": 37,
+      "close_wins": 9,
+      "close_losses": 28,
+      "close_game_win_pct": 0.243,
+      "blowout_losses": 20,
+      "blowout_loss_pct": 0.244
+    },
+    "pre_post_elim": {
+      "elimination_date": "2024-02-23",
+      "elimination_game": 56,
+      "pre_elim_games": 56,
+      "post_elim_games": 26,
+      "pre_elim_net_rating": -9.2,
+      "post_elim_net_rating": -7.5,
+      "net_rating_change": 1.7,
+      "pre_elim_off_rating": 110.6,
+      "post_elim_off_rating": 109.4,
+      "pre_elim_def_rating": 119.8,
+      "post_elim_def_rating": 116.9,
+      "collapse_flag": false
+    },
+    "opponent_adjusted": {}
+  },
+  "RIS": {
+    "baseline_rotation": {
+      "pre_elim_games": 56,
+      "total_pre_players": 25,
+      "top_8": [
+        {
+          "player_id": 1628398,
+          "player_name": "Kyle Kuzma",
+          "pre_avg_minutes": 31.6,
+          "pre_games": 54,
+          "pre_net_rating": -13.4,
+          "pre_usg": 0.3
+        },
+        {
+          "player_id": 1626145,
+          "player_name": "Tyus Jones",
+          "pre_avg_minutes": 28.9,
+          "pre_games": 56,
+          "pre_net_rating": -13.8,
+          "pre_usg": 0.166
+        },
+        {
+          "player_id": 1629673,
+          "player_name": "Jordan Poole",
+          "pre_avg_minutes": 28.1,
+          "pre_games": 56,
+          "pre_net_rating": -12.0,
+          "pre_usg": 0.235
+        },
+        {
+          "player_id": 1630166,
+          "player_name": "Deni Avdija",
+          "pre_avg_minutes": 27.6,
+          "pre_games": 56,
+          "pre_net_rating": -9.2,
+          "pre_usg": 0.188
+        },
+        {
+          "player_id": 1641731,
+          "player_name": "Bilal Coulibaly",
+          "pre_avg_minutes": 27.1,
+          "pre_games": 55,
+          "pre_net_rating": -11.7,
+          "pre_usg": 0.135
+        },
+        {
+          "player_id": 1629655,
+          "player_name": "Daniel Gafford",
+          "pre_avg_minutes": 26.5,
+          "pre_games": 45,
+          "pre_net_rating": -9.2,
+          "pre_usg": 0.137
+        },
+        {
+          "player_id": 1628963,
+          "player_name": "Marvin Bagley III",
+          "pre_avg_minutes": 23.4,
+          "pre_games": 13,
+          "pre_net_rating": -10.4,
+          "pre_usg": 0.217
+        },
+        {
+          "player_id": 1630557,
+          "player_name": "Corey Kispert",
+          "pre_avg_minutes": 22.6,
+          "pre_games": 55,
+          "pre_net_rating": -12.9,
+          "pre_usg": 0.196
+        }
+      ]
+    },
+    "post_elim_changes": {
+      "post_elim_games": 26,
+      "changes": [
+        {
+          "player_name": "Kyle Kuzma",
+          "pre_avg_min": 31.6,
+          "post_avg_min": 33.8,
+          "min_change": 2.2,
+          "pct_change": 7.0,
+          "post_games": 17
+        },
+        {
+          "player_name": "Tyus Jones",
+          "pre_avg_min": 28.9,
+          "post_avg_min": 20.9,
+          "min_change": -8.0,
+          "pct_change": -27.7,
+          "post_games": 15
+        },
+        {
+          "player_name": "Jordan Poole",
+          "pre_avg_min": 28.1,
+          "post_avg_min": 29.7,
+          "min_change": 1.6,
+          "pct_change": 5.7,
+          "post_games": 26
+        },
+        {
+          "player_name": "Deni Avdija",
+          "pre_avg_min": 27.6,
+          "post_avg_min": 30.8,
+          "min_change": 3.2,
+          "pct_change": 11.6,
+          "post_games": 23
+        },
+        {
+          "player_name": "Bilal Coulibaly",
+          "pre_avg_min": 27.1,
+          "post_avg_min": 25.2,
+          "min_change": -1.9,
+          "pct_change": -7.0,
+          "post_games": 9
+        },
+        {
+          "player_name": "Daniel Gafford",
+          "pre_avg_min": 26.5,
+          "post_avg_min": 0,
+          "min_change": -26.5,
+          "pct_change": -100.0,
+          "post_games": 0
+        },
+        {
+          "player_name": "Marvin Bagley III",
+          "pre_avg_min": 23.4,
+          "post_avg_min": 24.7,
+          "min_change": 1.3,
+          "pct_change": 5.6,
+          "post_games": 11
+        },
+        {
+          "player_name": "Corey Kispert",
+          "pre_avg_min": 22.6,
+          "post_avg_min": 31.8,
+          "min_change": 9.2,
+          "pct_change": 40.7,
+          "post_games": 26
+        }
+      ],
+      "new_rotation_players": [
+        {
+          "player_name": "Landry Shamet",
+          "post_avg_min": 20.6,
+          "post_games": 7
+        }
+      ],
+      "avg_minutes_change": -2.4,
+      "significant_decreases": 2,
+      "rotation_disruption_flag": false
+    },
+    "quality_correlation": {
+      "pre_elim_corr": -0.202,
+      "post_elim_corr": -0.025,
+      "correlation_shift": 0.177,
+      "meritocracy_decline_flag": false
+    },
+    "experimentation": {
+      "pre_avg_players_per_game": 14.2,
+      "post_avg_players_per_game": 12.5,
+      "pre_total_unique_players": 25,
+      "post_total_unique_players": 19,
+      "experimentation_increase": -1.7
+    }
+  },
+  "BTCA": {
+    "league_context": {
+      "team_wins": 15,
+      "team_losses": 67,
+      "team_record": "15-67",
+      "bottom_6_teams": [
+        [
+          "Pistons",
+          14
+        ],
+        [
+          "Wizards",
+          15
+        ],
+        [
+          "Trail Blazers",
+          21
+        ],
+        [
+          "Hornets",
+          21
+        ],
+        [
+          "Spurs",
+          22
+        ],
+        [
+          "Raptors",
+          25
+        ]
+      ],
+      "bottom_6_wins": [
+        14,
+        15,
+        21,
+        21,
+        22,
+        25
+      ],
+      "historical_avg": 22.5,
+      "historical_std": 2.5,
+      "current_bottom6_avg": 19.7,
+      "deviation_from_baseline": -1.15,
+      "teams_under_22_wins": 4,
+      "league_wide_flag": true,
+      "seasons_analyzed": 20
+    },
+    "temporal_pattern": {
+      "pre_asb_win_pct": 0.167,
+      "pre_asb_record": "9-45",
+      "post_asb_win_pct": 0.214,
+      "post_asb_record": "6-22",
+      "post_as_pct_of_pre": 128.1,
+      "below_50_threshold": false,
+      "roster_talent_loss_clears_flag": false,
+      "flag": false,
+      "pre_asb_net_rating": -8.5,
+      "post_asb_net_rating": -9.0
+    },
+    "calendar_correlation": {
+      "periods": {
+        "Pre-trade deadline": {
+          "win_rate": 0.18,
+          "record": "9-41",
+          "games": 50
+        },
+        "Post-deadline to ASB": {
+          "win_rate": 0.0,
+          "record": "0-4",
+          "games": 4
+        },
+        "Post-ASB to elimination": {
+          "win_rate": 0.0,
+          "record": "0-1",
+          "games": 1
+        },
+        "Post-elimination": {
+          "win_rate": 0.222,
+          "record": "6-21",
+          "games": 27
+        }
+      },
+      "trade_deadline": "2024-02-08",
+      "asb_date": "2024-02-16",
+      "elimination_date": "2024-02-23"
+    }
+  },
+  "supplemental": {
+    "draft_pick_incentive": {
+      "team_wins": 15,
+      "team_losses": 67,
+      "draft_position": 2,
+      "wins_gap_to_next_worse": 1,
+      "wins_gap_to_next_better": 6,
+      "bottom_5_cluster_size": 2,
+      "wins_to_exit_bottom_5": 8,
+      "bottom_5_cutoff_wins": 22,
+      "in_bottom_3": true,
+      "in_bottom_5": true
+    },
+    "margin_profile": {
+      "total_losses": 67,
+      "total_wins": 15,
+      "avg_loss_margin": -12.6,
+      "avg_win_margin": 9.0,
+      "blowout_losses": 20,
+      "blowout_loss_pct": 0.299,
+      "competitive_losses": 14,
+      "competitive_loss_pct": 0.209,
+      "first_half_net_rating": -9.0,
+      "second_half_net_rating": -8.3,
+      "trajectory": 0.7,
+      "pre_elim_avg_margin": -9.2,
+      "post_elim_avg_margin": -7.5,
+      "margin_asymmetry": -3.6
+    },
+    "veteran_shelving": {
+      "total_players_used": 24,
+      "regular_rotation_size": 8,
+      "barely_played_count": 9,
+      "barely_played": [
+        {
+          "player_name": "Richaun Holmes",
+          "games": 17,
+          "avg_min": 18.7
+        },
+        {
+          "player_name": "Hamidou Diallo",
+          "games": 2,
+          "avg_min": 2.4
+        },
+        {
+          "player_name": "Anthony Gill",
+          "games": 50,
+          "avg_min": 9.3
+        },
+        {
+          "player_name": "Justin Champagnie",
+          "games": 15,
+          "avg_min": 15.7
+        },
+        {
+          "player_name": "Eugene Omoruyi",
+          "games": 43,
+          "avg_min": 9.1
+        },
+        {
+          "player_name": "Ryan Rollins",
+          "games": 10,
+          "avg_min": 6.6
+        },
+        {
+          "player_name": "Jules Bernard",
+          "games": 19,
+          "avg_min": 7.9
+        },
+        {
+          "player_name": "Tristan Vukcevic",
+          "games": 10,
+          "avg_min": 15.3
+        },
+        {
+          "player_name": "Trey Jemison III",
+          "games": 2,
+          "avg_min": 0.7
+        }
+      ],
+      "shelved_post_elim": [
+        {
+          "player_name": "Daniel Gafford",
+          "pre_avg_min": 26.5,
+          "post_avg_min": 0,
+          "pre_games": 45,
+          "post_games": 0,
+          "minutes_drop": 26.5
+        }
+      ],
+      "shelved_count": 1,
+      "one_off_players": 2
+    },
+    "pace_manipulation": {
+      "season_avg_pace": 103.1,
+      "pace_std": 4.2,
+      "pace_cv": 4.1,
+      "first_20_pace": 103.9,
+      "last_20_pace": 101.7,
+      "pace_trajectory": -2.2,
+      "pre_elim_pace": 103.7,
+      "post_elim_pace": 101.7,
+      "pace_shift_at_elim": -2.0,
+      "league_avg_pace": 102.0
+    },
+    "lineup_overhaul": {
+      "trade_deadline": {
+        "date": "2024-02-08",
+        "total_departed": 6,
+        "meaningful_departed": 3,
+        "departed_players": [
+          {
+            "player_name": "Mike Muscala",
+            "avg_min_before": 14.1
+          },
+          {
+            "player_name": "Danilo Gallinari",
+            "avg_min_before": 14.8
+          },
+          {
+            "player_name": "Daniel Gafford",
+            "avg_min_before": 26.5
+          }
+        ],
+        "total_arrived": 3,
+        "meaningful_arrived": 3,
+        "arrived_players": [
+          {
+            "player_name": "Richaun Holmes",
+            "avg_min_after": 18.7
+          },
+          {
+            "player_name": "Tristan Vukcevic",
+            "avg_min_after": 15.3
+          },
+          {
+            "player_name": "Justin Champagnie",
+            "avg_min_after": 15.7
+          }
+        ],
+        "roster_churn": 9
+      },
+      "roster_churn_overall": {
+        "total_unique_players": 24,
+        "first_half_unique": 20,
+        "second_half_unique": 20
+      }
+    }
+  },
+  "composite": {
+    "raw_scores": {
+      "SAS": 38.6,
+      "NRCI": 41.2,
+      "RIS": 25.0,
+      "BTCA": 35.0
+    },
+    "weighted_scores": {
+      "SAS": 11.6,
+      "NRCI": 10.3,
+      "RIS": 6.2,
+      "BTCA": 7.0
+    },
+    "composite_score": 35.1,
+    "classification": "Yellow",
+    "expected_classification": "Yellow/Orange",
+    "match": true
+  },
+  "elimination": {
+    "elimination_date": "2024-02-23",
+    "elimination_game_number": 56,
+    "playoff_cutoff_wins": 36,
+    "playoff_cutoff_seed": 10,
+    "conference": "East",
+    "final_wins": null
+  }
+}
