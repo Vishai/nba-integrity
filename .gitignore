@@ -8,6 +8,8 @@ build/
 
 # Data (SQLite cache is large and shouldn't be in git)
 data/tii_cache.db
+# Activity log is runtime-generated
+data/activity_log.jsonl
 
 # Environment
 .env

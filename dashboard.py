@@ -488,10 +488,11 @@ if selected_cases:
 filtered_df = filtered_df.head(max_rows)
 
 st.dataframe(
-    df.style.apply(
+    filtered_df.style.apply(
         lambda row: [
             "background-color: #d4edda" if row["Match"] == "✅" else "background-color: #f8d7da"
-        ] * len(row),
+        ]
+        * len(row),
         axis=1,
     ),
     use_container_width=True,
