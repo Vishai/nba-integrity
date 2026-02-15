@@ -17,7 +17,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-from tii.config import CASES, CLASSIFICATIONS
+from tii.config import get_all_cases, CLASSIFICATIONS
 
 # Try SQLite cache first (local dev), fall back to JSON exports (Streamlit Cloud)
 COMPUTED_DIR = Path(__file__).parent / "data" / "computed"
@@ -97,7 +97,7 @@ def load_all_case_data():
     Tries SQLite cache first (local dev), falls back to JSON exports (Streamlit Cloud).
     """
     out = {}
-    for cid, cfg in CASES.items():
+    for cid, cfg in get_all_cases().items():
         if cfg.get("skip"):
             continue
         row = {"case_id": cid, "team": cfg["team_name"], "season": cfg["season"],
@@ -465,6 +465,28 @@ st.markdown("---")
 
 # Main scoreboard table
 st.subheader("📊 All Cases — Live Scoring")
+
+# Filters (defaults keep the view small)
+all_case_ids = list(df["Case"].values)
+show_dynamic = st.checkbox("Include dynamic cases", value=True)
+max_rows = st.slider("Max rows", 5, 100, 15, 5)
+
+filtered_df = df.copy()
+if not show_dynamic:
+    # Built-in cases are single-letter IDs (A-H)
+    filtered_df = filtered_df[filtered_df["Case"].str.len() == 1]
+
+# Allow explicit selection (optional)
+selected_cases = st.multiselect(
+    "Filter cases (optional)",
+    options=list(filtered_df["Case"].values),
+    default=[],
+)
+if selected_cases:
+    filtered_df = filtered_df[filtered_df["Case"].isin(selected_cases)]
+
+filtered_df = filtered_df.head(max_rows)
+
 st.dataframe(
     df.style.apply(
         lambda row: [
@@ -485,7 +507,7 @@ st.subheader("🔎 Case Deep Dive")
 
 selected_case = st.selectbox(
     "Select case",
-    options=list(all_data.keys()),
+    options=list(filtered_df["Case"].values) if len(filtered_df) > 0 else list(all_data.keys()),
     format_func=lambda c: f"Case {c}: {all_data[c]['team']} — {all_data[c]['season']}",
 )
 

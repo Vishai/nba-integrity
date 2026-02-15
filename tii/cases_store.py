@@ -68,6 +68,24 @@ def add_dynamic_case(
     added_by: Optional[str] = None,
     path: Path = DEFAULT_CASES_PATH,
 ) -> str:
+    """Add a dynamic case to the file-backed registry.
+
+    Aliasing behavior:
+    - If the team/season matches an existing built-in case (A-H), returns the
+      built-in case id instead of creating a duplicate dynamic entry.
+    """
+
+    # If this team/season matches a built-in case, alias to that.
+    try:
+        from tii.config import BASE_CASES
+
+        for cid, cfg in BASE_CASES.items():
+            if int(cfg.get("team_id")) == int(team_id) and cfg.get("season") == season:
+                return cid
+    except Exception:
+        # Avoid hard failure on import issues; fall back to dynamic registry.
+        pass
+
     cases = load_dynamic_cases(path)
 
     case_id = make_case_id(team_abbr, season)

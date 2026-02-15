@@ -3,7 +3,8 @@
 import click
 
 from tii.config import get_all_cases, get_case
-from tii.cases_store import add_dynamic_case
+from tii.cases_store import add_dynamic_case, append_activity
+from tii.activity import summarize_activity, tail_events
 
 
 @click.group()
@@ -65,6 +66,16 @@ def ingest(case_id, team, season, added_by, all_cases, force, delay):
             team_name=t["full_name"],
             season=season,
             added_by=added_by,
+        )
+        append_activity(
+            {
+                "event": "ingest_requested",
+                "case_id": cid,
+                "team_abbr": t["abbreviation"],
+                "team_id": t["id"],
+                "season": season,
+                "added_by": added_by,
+            }
         )
         ingest_case(cid, force=force)
         return
@@ -192,6 +203,16 @@ def compute(case_id, team, season, added_by, all_cases):
             season=season,
             added_by=added_by,
         )
+        append_activity(
+            {
+                "event": "compute_requested",
+                "case_id": cid,
+                "team_abbr": t["abbreviation"],
+                "team_id": t["id"],
+                "season": season,
+                "added_by": added_by,
+            }
+        )
         run_case(cid)
         return
 
@@ -280,6 +301,33 @@ def render(case_id, all_cases, output_path, inject):
     else:
         click.echo("Error: provide --case ID, --all, or --inject")
         raise SystemExit(1)
+
+
+@cli.command("activity")
+@click.option("--tail", "tail_n", type=int, default=25, help="Show last N events")
+def activity_cmd(tail_n: int):
+    """Show activity summary (who added/ran what) + recent events."""
+
+    summary = summarize_activity()
+
+    click.echo(f"\nTotal events: {summary['total']}")
+    click.echo("\nBy event:")
+    for k, v in summary["by_event"]:
+        click.echo(f"  {k}: {v}")
+
+    click.echo("\nBy user:")
+    for k, v in summary["by_user"]:
+        click.echo(f"  {k}: {v}")
+
+    click.echo("\nTop cases:")
+    for k, v in summary["by_case"]:
+        click.echo(f"  {k}: {v}")
+
+    click.echo(f"\nLast {tail_n} events:")
+    for ev in tail_events(tail_n):
+        click.echo(
+            f"  {ev.get('ts','')} {ev.get('event','')} case={ev.get('case_id','')} user={ev.get('added_by','')}"
+        )
 
 
 if __name__ == "__main__":
