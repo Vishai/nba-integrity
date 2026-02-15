@@ -12,8 +12,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Appendix F — Implementation Timeline", page_icon="📅", layout="wide")
-
 st.title("Appendix F — Implementation Timeline")
 st.markdown("""
 A phased rollout ensures the framework is validated with real data before

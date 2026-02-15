@@ -16,8 +16,6 @@ import pandas as pd
 
 from tii.config import CASES
 
-st.set_page_config(page_title="Appendix D — ETP Simulator", page_icon="🎰", layout="wide")
-
 COMPUTED_DIR = Path(__file__).resolve().parent.parent / "data" / "computed"
 
 # ── ETP tier definitions from SRP Section V ─────────────────────────────
