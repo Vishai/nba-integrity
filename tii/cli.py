@@ -2,7 +2,8 @@
 
 import click
 
-from tii.config import CASES, get_case
+from tii.config import get_all_cases, get_case
+from tii.cases_store import add_dynamic_case
 
 
 @click.group()
@@ -13,27 +14,35 @@ def cli():
 
 @cli.command("list")
 def list_cases():
-    """Show all configured case studies."""
-    click.echo(f"\n{'Case':<6}{'Team':<30}{'Season':<12}{'Archetype':<45}{'Expected'}")
-    click.echo("-" * 100)
-    for cid, c in CASES.items():
+    """Show all configured case studies (built-in + dynamic)."""
+    click.echo(
+        f"\n{'Case':<18}{'Team':<30}{'Season':<12}{'Archetype':<35}{'Expected':<12}{'Added by'}"
+    )
+    click.echo("-" * 120)
+    for cid, c in get_all_cases().items():
+        added_by = c.get("added_by", "")
         if c.get("skip"):
             status = f"(deferred: {c.get('note', '')})"
-            click.echo(f"{cid:<6}{c['team_name']:<30}{c['season']:<12}{c['archetype']:<45}{status}")
+            click.echo(
+                f"{cid:<18}{c['team_name']:<30}{c['season']:<12}{c['archetype']:<35}{status:<12}{added_by}"
+            )
         else:
             click.echo(
-                f"{cid:<6}{c['team_name']:<30}{c['season']:<12}"
-                f"{c['archetype']:<45}{c['expected_classification']}"
+                f"{cid:<18}{c['team_name']:<30}{c['season']:<12}"
+                f"{c['archetype']:<35}{c['expected_classification']:<12}{added_by}"
             )
     click.echo()
 
 
 @cli.command()
-@click.option("--case", "case_id", help="Case letter (A-H)")
+@click.option("--case", "case_id", help="Case id (e.g. A or UTA-2024-25)")
+@click.option("--team", help="Team abbreviation or name (e.g. UTA or 'Utah Jazz')")
+@click.option("--season", help="Season string like '2024-25'")
+@click.option("--added-by", help="Name/email of the person adding this case")
 @click.option("--all", "all_cases", is_flag=True, help="Ingest all active cases")
 @click.option("--force", is_flag=True, help="Re-fetch even if cached")
 @click.option("--delay", type=float, default=1.5, help="Rate limit delay in seconds")
-def ingest(case_id, all_cases, force, delay):
+def ingest(case_id, team, season, added_by, all_cases, force, delay):
     """Fetch and cache raw data for a team-season."""
     from tii import rate_limit
     from tii.ingest.team_season import ingest_case
@@ -41,20 +50,40 @@ def ingest(case_id, all_cases, force, delay):
     rate_limit.set_delay(delay)
 
     if all_cases:
-        for cid, c in CASES.items():
+        for cid, c in get_all_cases().items():
             if not c.get("skip"):
                 ingest_case(cid, force=force)
-    elif case_id:
+        return
+
+    if team and season:
+        from tii.team_lookup import lookup_team
+
+        t = lookup_team(team)
+        cid = add_dynamic_case(
+            team_abbr=t["abbreviation"],
+            team_id=t["id"],
+            team_name=t["full_name"],
+            season=season,
+            added_by=added_by,
+        )
+        ingest_case(cid, force=force)
+        return
+
+    if case_id:
         ingest_case(case_id.upper(), force=force)
-    else:
-        click.echo("Error: provide --case LETTER or --all")
-        raise SystemExit(1)
+        return
+
+    click.echo("Error: provide --case ID, or --team TEAM --season SEASON, or --all")
+    raise SystemExit(1)
 
 
 @cli.command()
-@click.option("--case", "case_id", help="Case letter (A-H)")
+@click.option("--case", "case_id", help="Case id (e.g. A or UTA-2024-25)")
+@click.option("--team", help="Team abbreviation or name (e.g. UTA or 'Utah Jazz')")
+@click.option("--season", help="Season string like '2024-25'")
+@click.option("--added-by", help="Name/email of the person adding this case")
 @click.option("--all", "all_cases", is_flag=True, help="Compute all active cases")
-def compute(case_id, all_cases):
+def compute(case_id, team, season, added_by, all_cases):
     """Derive TII component metrics from cached data."""
     from tii.compute.elimination import compute_elimination_date
     from tii.compute.btca import compute_btca
@@ -147,14 +176,31 @@ def compute(case_id, all_cases):
         )
 
     if all_cases:
-        for cid, c in CASES.items():
+        for cid, c in get_all_cases().items():
             if not c.get("skip"):
                 run_case(cid)
-    elif case_id:
+        return
+
+    if team and season:
+        from tii.team_lookup import lookup_team
+
+        t = lookup_team(team)
+        cid = add_dynamic_case(
+            team_abbr=t["abbreviation"],
+            team_id=t["id"],
+            team_name=t["full_name"],
+            season=season,
+            added_by=added_by,
+        )
+        run_case(cid)
+        return
+
+    if case_id:
         run_case(case_id.upper())
-    else:
-        click.echo("Error: provide --case LETTER or --all")
-        raise SystemExit(1)
+        return
+
+    click.echo("Error: provide --case ID, or --team TEAM --season SEASON, or --all")
+    raise SystemExit(1)
 
 
 @cli.command()
@@ -166,7 +212,7 @@ def status():
                f"{'Splits':<8}{'Elim':<14}{'TII':<10}{'Class'}")
     click.echo("-" * 90)
 
-    for cid, c in CASES.items():
+    for cid, c in get_all_cases().items():
         if c.get("skip"):
             click.echo(f"{cid:<6}{'--':<8}{c['season']:<12}{'--':<8}"
                         f"{'--':<8}{'--':<8}{'--':<14}{'--':<10}{'--'}")
@@ -205,7 +251,7 @@ def status():
 
 
 @cli.command()
-@click.option("--case", "case_id", help="Case letter (A-H)")
+@click.option("--case", "case_id", help="Case id (e.g. A or UTA-2024-25)")
 @click.option("--all", "all_cases", is_flag=True, help="Render all active cases")
 @click.option("--output", "output_path", type=click.Path(), help="Output file path")
 @click.option("--inject", is_flag=True, help="Write into APPENDIX_A_AUTOGEN markers")
@@ -232,5 +278,9 @@ def render(case_id, all_cases, output_path, inject):
         else:
             click.echo(md)
     else:
-        click.echo("Error: provide --case LETTER, --all, or --inject")
+        click.echo("Error: provide --case ID, --all, or --inject")
         raise SystemExit(1)
+
+
+if __name__ == "__main__":
+    cli()

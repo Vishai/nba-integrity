@@ -1,6 +1,12 @@
 """Case study definitions and constants for TII backtesting."""
 
-CASES = {
+from __future__ import annotations
+
+from typing import Dict, Any
+
+from tii.cases_store import load_dynamic_cases
+
+BASE_CASES: Dict[str, Dict[str, Any]] = {
     "A": {
         "team_abbr": "PHI",
         "team_id": 1610612755,
@@ -74,6 +80,25 @@ CASES = {
         "playoff_cutoff_seed": 10,
     },
 }
+
+
+def load_cases() -> Dict[str, Dict[str, Any]]:
+    """Return merged built-in + dynamic cases."""
+
+    dynamic = load_dynamic_cases()
+    # Dynamic cases should not overwrite built-in letter cases.
+    merged = {**dynamic, **BASE_CASES}
+    return merged
+
+
+def get_all_cases() -> Dict[str, Dict[str, Any]]:
+    """Convenience accessor used across the app."""
+
+    return load_cases()
+
+
+# NOTE: Kept for backward compatibility: modules import CASES.
+CASES = get_all_cases()
 
 # Conference membership for elimination computation
 EAST_TEAMS = {
@@ -152,13 +177,20 @@ CLASSIFICATIONS = [
 
 
 def get_case(case_id: str) -> dict:
-    """Get case config by letter, raising if not found or skipped."""
+    """Get case config by id (lettered or dynamic), raising if not found or skipped."""
+
     case_id = case_id.upper()
-    if case_id not in CASES:
-        raise ValueError(f"Unknown case '{case_id}'. Valid: {', '.join(CASES.keys())}")
-    case = CASES[case_id]
+    cases = get_all_cases()
+
+    if case_id not in cases:
+        raise ValueError(
+            f"Unknown case '{case_id}'. Valid: {', '.join(sorted(cases.keys()))}"
+        )
+    case = cases[case_id]
     if case.get("skip"):
-        raise ValueError(f"Case {case_id} is deferred: {case.get('note', 'no reason given')}")
+        raise ValueError(
+            f"Case {case_id} is deferred: {case.get('note', 'no reason given')}"
+        )
     return case
 
 
