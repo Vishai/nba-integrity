@@ -14,6 +14,8 @@ import numpy as np
 
 from tii.config import get_all_cases, CLASSIFICATIONS
 from tii.case_prefs import is_pinned, is_hidden, set_pref
+from tii.cases_store import add_dynamic_case
+from tii.team_lookup import lookup_team
 
 # Try SQLite cache first (local dev), fall back to JSON exports (Streamlit Cloud)
 COMPUTED_DIR = Path(__file__).resolve().parent.parent / "data" / "computed"
@@ -28,6 +30,78 @@ st.title("🏀 Tanking Integrity Index — Calibration Dashboard")
 RUN_MODE = os.getenv("RUN_MODE", "local").strip().lower()
 IS_LOCAL_MODE = RUN_MODE == "local"
 IS_CLOUD_MODE = RUN_MODE == "cloud"
+
+# Local-only: allow adding team+season cases (Cloud should be read-only)
+if IS_LOCAL_MODE:
+    with st.expander("➕ Add a team + season", expanded=False):
+        c1, c2, c3 = st.columns([2, 2, 2])
+        with c1:
+            team_input = st.text_input(
+                "Team (abbr or name)",
+                placeholder="UTA or 'Utah Jazz'",
+            )
+        with c2:
+            season_input = st.text_input(
+                "Season",
+                placeholder="2024-25",
+            )
+        with c3:
+            added_by = st.text_input(
+                "Added by (optional)",
+                placeholder="Brandon",
+            )
+
+        cbtn1, cbtn2, cbtn3 = st.columns([1, 1, 4])
+
+        def _add_case_only():
+            t = lookup_team(team_input)
+            cid = add_dynamic_case(
+                team_abbr=t["abbreviation"],
+                team_id=t["id"],
+                team_name=t["full_name"],
+                season=season_input,
+                added_by=added_by or None,
+            )
+            st.success(f"Added case: {cid}")
+            st.cache_data.clear()
+            st.rerun()
+
+        def _add_and_ingest():
+            t = lookup_team(team_input)
+            cid = add_dynamic_case(
+                team_abbr=t["abbreviation"],
+                team_id=t["id"],
+                team_name=t["full_name"],
+                season=season_input,
+                added_by=added_by or None,
+            )
+
+            from tii.ingest.team_season import ingest_case
+
+            with st.spinner(f"Ingesting {cid}..."):
+                ingest_case(cid, force=False)
+
+            st.success(f"Ingest complete: {cid}")
+            st.cache_data.clear()
+            st.rerun()
+
+        with cbtn1:
+            if st.button("Add case"):
+                if not team_input.strip() or not season_input.strip():
+                    st.error("Team and season are required")
+                else:
+                    _add_case_only()
+
+        with cbtn2:
+            if st.button("Add + ingest"):
+                if not team_input.strip() or not season_input.strip():
+                    st.error("Team and season are required")
+                else:
+                    _add_and_ingest()
+
+        st.caption(
+            "Cloud demo mode is read-only. Run locally (RUN_MODE=local) to add/ingest new seasons."
+        )
 
 # ══════════════════════════════════════════════════════════════════════════
 # HOW IT WORKS (expandable)
