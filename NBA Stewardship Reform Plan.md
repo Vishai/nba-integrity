@@ -55,6 +55,29 @@ Players have every incentive to perform at their highest level: future contract 
 
 No component of this framework measures or penalizes individual player performance. The system is designed to detect organizational patterns, not to question whether a player is "trying hard enough."
 
+### The Coaching Autonomy Limitation: Intent Is Unknowable
+
+This framework measures observable organizational patterns. That is both its greatest strength — objectivity, consistency, resistance to narrative manipulation — and its most important limitation. **Observable patterns cannot distinguish between manipulation and development.**
+
+Consider a concrete example: a coach benches his starting five midway through a competitive game — not because the organization wants to lose, but because the starters repeatedly failed to execute a defensive scheme the coaching staff had emphasized all week. The coach is enforcing accountability. He is investing in the team's long-term competitive capacity by establishing that preparation matters, that pre-game plans are not optional, and that there are consequences for ignoring coaching. This is not tanking. It is arguably excellent coaching — the kind of organizational seriousness that builds winning cultures over time.
+
+But from the outside, the statistical fingerprint is identical to tanking behavior: positive-impact players removed from a competitive game state, replaced by lower-impact players, resulting in a loss the team might otherwise have won. The RIS would detect the same pattern. The NRCI might register the same fourth-quarter collapse.
+
+This framework does not — and cannot — claim to resolve this tension fully. Intent is subjective. A league office sitting in New York cannot know whether a coach in Salt Lake City benched a player to teach a lesson or to chase a draft pick. The same decision, made by the same coach, with the same on-court result, could serve either purpose.
+
+What the framework *can* do is reduce false positives through design:
+
+- **The 50-game baseline** in the RIS component means that coaches who routinely hold players accountable throughout the season establish that pattern as their norm. A coach known for benching starters in October won't trigger flags for doing the same thing in March.
+- **The post-trade recalibration window** in the NRCI ensures that roster changes — which often coincide with increased developmental emphasis — don't produce false signals.
+- **The appeals process** exists specifically for cases where organizational context explains a statistical pattern that looks concerning on paper.
+- **The 2-year observation period** before consequences attach gives the system time to learn what normal coaching variation looks like across the league.
+
+But these mitigations are partial. There will be edge cases where a coach's legitimate developmental decision produces a TII signal that the framework cannot fully distinguish from manipulation. This is a real cost of the system, and it should be acknowledged honestly rather than papered over.
+
+The counterargument — and the reason this framework exists despite this limitation — is that the league is *already* intervening in coaching decisions. The NBA already fines teams for resting players. It already investigated the Pacers' February 2025 lineup decisions. It already publicly pressures organizations about player availability. The current approach is ad hoc, inconsistent, opaque, and offers no structured avenue for teams to explain or appeal. This framework replaces that with something transparent, calibrated, and appealable — imperfect, but meaningfully better than the status quo.
+
+The league probably shouldn't be in the business of second-guessing coaching decisions at all. But here we are. Given that reality, the question is not whether to have a system — it's whether the system is honest about what it can and cannot know.
+
 ### The CBA Acknowledgment: Rebuilding as Structural Necessity
 
 This framework recognizes a fundamental truth that most anti-tanking proposals ignore: **the NBA's salary cap structure often forces rebuilding behavior.** Teams do not always choose to be bad. The CBA's rigid cap, luxury tax penalties, max contract structures, and restricted free agency rules regularly leave franchises with no viable competitive path forward. When a team is paying $25 million to a veteran on a roster winning 18 games, trading that player for future draft capital and cap relief is not tanking — it is responsible asset management.
@@ -263,6 +286,14 @@ The RIS measures whether coaching staffs are deploying lineups designed to compe
 - **Baseline establishment:** Each team's minutes distribution pattern from their first 50 games establishes the baseline. This accounts for team-specific coaching philosophy and development priorities.
 - **Flag trigger:** Post-elimination minutes correlation with player quality **inverts** — meaning lower-impact players receive disproportionately more minutes in close-game contexts than they did in the team's own first-50-game baseline.
 - **Severity weighting:** Rotation changes in blowout game states (20+ point differential) are weighted minimally. Rotation changes in competitive game states (within 10 points in the fourth quarter) are weighted at full value.
+
+#### Developmental Coaching Acknowledgment
+
+The RIS is the component most vulnerable to conflating legitimate coaching decisions with tanking behavior. A coach who benches starters to enforce accountability, rotates young players through unfamiliar roles to accelerate development, or shortens a veteran's minutes to evaluate a prospect is making decisions that serve the franchise's competitive future — even if they cost a game in the present.
+
+The 50-game baseline is the primary structural safeguard here. A coaching staff that emphasizes accountability and developmental rotation throughout the season will establish those patterns as their norm, and post-elimination continuation of those patterns will not produce anomalous flags. The RIS is designed to detect *behavioral discontinuity* — a team that competes one way for 50 games and then operates fundamentally differently once eliminated. A coach whose developmental philosophy is consistent throughout the season is operating within the system's expectations.
+
+Where the RIS *cannot* fully protect coaching autonomy is in the case of a coach who changes approach *specifically because* elimination frees him to prioritize development over wins. This is a reasonable coaching decision that may nonetheless produce statistical patterns indistinguishable from organizational manipulation. The appeals process (Section IV — TII Governance) is the appropriate venue for these cases, and the TII Review Board should weigh documented developmental plans, coaching track records, and organizational context when evaluating borderline RIS scores.
 
 #### Illustrative Case
 

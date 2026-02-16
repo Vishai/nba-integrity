@@ -16,8 +16,12 @@ PLAN_PATH = Path(__file__).resolve().parent.parent / "NBA Stewardship Reform Pla
 
 
 @st.cache_data
-def load_plan_sections():
-    """Parse the plan markdown into titled sections split on '## ' headers."""
+def load_plan_sections(_file_mtime: float = None):
+    """Parse the plan markdown into titled sections split on '## ' headers.
+
+    _file_mtime is a cache-busting parameter so edits to the source
+    markdown are reflected without restarting the app.
+    """
     text = PLAN_PATH.read_text()
     lines = text.split("\n")
 
@@ -67,7 +71,7 @@ if not PLAN_PATH.exists():
     st.error(f"Plan document not found at `{PLAN_PATH}`")
     st.stop()
 
-sections = load_plan_sections()
+sections = load_plan_sections(_file_mtime=PLAN_PATH.stat().st_mtime)
 
 # ── Quick navigation ────────────────────────────────────────────────────
 st.subheader("Document Outline")
