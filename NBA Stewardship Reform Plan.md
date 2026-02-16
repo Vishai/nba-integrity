@@ -96,19 +96,19 @@ An annual supplemental process that rewards franchises demonstrating competitive
 
 **SSL Eligibility:** Only teams meeting SP thresholds qualify.
 
-**SSL Awards:**
+**SSL Awards (four categories, ascending in significance):**
 
-- Draft-linked supplemental assets (additional second-round selections, draft swap rights)
-- Cap elasticity credits (defined flexibility in luxury tax or salary cap calculations)
-- Trade flexibility enhancements (expanded trade exception windows, relaxed matching salary requirements for qualifying transactions)
+1. **Trade flexibility enhancements** — expanded trade exception windows, relaxed matching salary requirements for qualifying transactions
+2. **Cap elasticity credits** — defined flexibility in luxury tax or salary cap calculations (single-use, non-transferable)
+3. **Draft-linked supplemental assets** — additional second-round selections, draft swap rights
+4. **ETP supplemental pick eligibility** — access to first-round talent redirected from penalized teams through the Emerging Talent Pool (Section V). This is the SSL's marquee prize: top-quartile SP teams may receive lottery-caliber prospects simply by demonstrating sustained organizational integrity. Eligibility requires Green classification, top-quartile SP, and no draft asset acquisitions from Red-classified teams in the prior 24 months.
 
 **SSL Lottery Mechanics:**
 
 - Odds weighted by SP accumulation
 - Diminishing returns applied to prevent runaway advantages for perennial high-SP teams
 - Separate lottery event conducted annually following the Standard Draft
-
-_[Note: Detailed SSL prize structure, cap elasticity credit mechanics, and trade flexibility specifications to be developed in Phase 1 expansion.]_
+- ETP supplemental picks are selected in SP rank order (highest SP picks first) from the pool of redirected lottery selections (see Section V for activation tiers and probability estimates)
 
 ---
 
@@ -636,7 +636,7 @@ Complete point values, category weights, and threshold calculations for Stewards
 
 ### Appendix C: SSL Prize Structure
 
-Detailed cap elasticity credit mechanics, trade flexibility specifications, and supplemental draft asset definitions.
+Detailed tier definitions (Tier 1/2/3/Below Threshold), cap elasticity credit mechanics, trade flexibility specifications, supplemental draft asset definitions, and ETP supplemental pick eligibility — including the step-by-step flow from ETP activation through supplemental selection, eligibility requirements, and maximum redirection cap.
 
 ### Appendix D: ETP Governance Framework
 
