@@ -73,7 +73,7 @@ if IS_LOCAL_MODE:
                 placeholder="Brandon",
             )
 
-        cbtn1, cbtn2, cbtn3 = st.columns([1, 1, 1])
+        cbtn1, cbtn2 = st.columns([1, 1])
 
         def _add_case_only():
             t = lookup_team(team_input)
@@ -111,27 +111,7 @@ if IS_LOCAL_MODE:
             st.cache_data.clear()
             st.rerun()
 
-        def _add_ingest_compute():
-            t = lookup_team(team_input)
-            cid = add_dynamic_case(
-                team_abbr=t["abbreviation"],
-                team_id=t["id"],
-                team_name=t["full_name"],
-                season=season_input,
-                added_by=added_by or None,
-            )
-
-            from tii.ingest.team_season import ingest_case
-
-            with st.spinner(f"Ingesting {cid}..."):
-                ingest_case(cid, force=False)
-
-            with st.spinner(f"Computing metrics for {cid}..."):
-                compute_case(cid)
-
-            st.success(f"Ingest + compute complete: {cid}")
-            st.cache_data.clear()
-            st.rerun()
+        # (Removed alt Add+ingest+compute flow; keep UI simple.)
 
         with cbtn1:
             if st.button("Add case"):
@@ -147,12 +127,7 @@ if IS_LOCAL_MODE:
                 else:
                     _add_and_ingest()
 
-        with cbtn3:
-            if st.button("Add + ingest + compute (alt)"):
-                if not team_input.strip() or not season_input.strip():
-                    st.error("Team and season are required")
-                else:
-                    _add_ingest_compute()
+        # (alt button removed)
 
         st.caption(
             "Cloud demo mode is read-only. Run locally (RUN_MODE=local) to add/ingest/compute new seasons."
