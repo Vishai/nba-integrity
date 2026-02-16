@@ -464,6 +464,37 @@ This design eliminates the critical flaw of binary enforcement systems. Consider
 
 This creates **social enforcement pressure**. The 3 teams already in Red have every rational incentive to publicly and privately pressure team #4 to compete, because team #4's behavior directly increases _their_ risk of losing a pick. The ratchet turns teams that have already been penalized into advocates against further tanking — an alignment of interests that no binary system produces.
 
+### Cross-Season Recidivist Escalation (Proposed)
+
+_The measures outlined in this subsection are suggestive design proposals intended to encourage outside-the-box thinking about systemic enforcement. They have not been formally modeled through collective bargaining analysis and are presented as starting points for further development — not as finalized policy._
+
+While the within-season ratchet addresses league-wide compounding in real time, it does not explicitly penalize **repeat offenders across seasons**. The SP decay mechanism (Section III) provides organic cross-season compounding — a team that tanked last year enters the new season with depleted SP and no SSL eligibility — but the lottery penalty structure itself resets each year.
+
+A recidivist escalation clause would close this gap by increasing penalties for teams that receive Orange or Red classifications in consecutive seasons:
+
+| Consecutive Seasons at Orange/Red | Combination Reduction | Position Displacement | Additional Consequences |
+|---|---|---|---|
+| **First offense** (baseline) | Orange: −15% / Red: −30% | Orange: −1 / Red: −2 | Standard ETP contribution |
+| **Second consecutive season** | Orange: −25% / Red: −40% | Orange: −2 / Red: −3 | Mandatory front office review by Competition Committee |
+| **Third consecutive season** | Orange: −35% / Red: −50% | Orange: −3 / Red: −4 | Automatic investigation trigger + ownership governance review |
+
+**Design rationale:**
+
+1. **Closing the reset loophole.** Without recidivist escalation, a team could absorb the standard 30% reduction as a known cost of doing business year after year. Escalation transforms tanking from a repeatable strategy into a depreciating asset — each successive year costs more.
+
+2. **Preserving first-offense proportionality.** The baseline penalties remain unchanged for teams experiencing their first Red classification. This protects legitimately bad teams that happen to trigger Orange in a single unusual season from disproportionate consequences.
+
+3. **Institutional accountability.** The governance review at the third consecutive offense recognizes that sustained competitive integrity failure is an organizational leadership problem, not merely a roster construction problem. This aligns with the NBA's existing authority over franchise governance.
+
+4. **Interaction with SP decay.** Recidivist escalation and SP decay compound multiplicatively. A team in its second consecutive Red season faces: (a) 40% combination reduction instead of 30%, (b) near-zero SP from the prior tank season (50% decay on already-low SP), (c) continued SSL ineligibility, and (d) increased ETP exposure from the larger forfeiture pool. The cumulative cost structure makes sustained tanking economically irrational even for front offices with long time horizons.
+
+_Open design questions for further development:_
+
+- _Should the recidivist counter reset after a Green season, or require two consecutive Green seasons to reset?_
+- _Should Yellow classifications count toward the recidivist counter, or only Orange/Red?_
+- _Should the escalation curve be linear or exponential?_
+- _How should recidivist status interact with ownership transfers — does the counter follow the franchise or the decision-makers?_
+
 ### Supplemental Selection Process
 
 When an ETP combination is drawn in the lottery:

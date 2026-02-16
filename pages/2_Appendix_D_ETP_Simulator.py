@@ -40,6 +40,24 @@ LOTTERY_COMBINATIONS = {
 COMBINATION_REDUCTION = {"Green": 0.0, "Yellow": 0.0, "Orange": 0.15, "Red": 0.30}
 POSITION_DISPLACEMENT = {"Green": 0, "Yellow": 0, "Orange": 1, "Red": 2}
 
+# Recidivist escalation tables (proposed — see SRP Section V)
+# Key = consecutive seasons at Orange or Red (1 = first offense, 2 = second, 3+ = third)
+RECIDIVIST_REDUCTION = {
+    1: {"Orange": 0.15, "Red": 0.30},
+    2: {"Orange": 0.25, "Red": 0.40},
+    3: {"Orange": 0.35, "Red": 0.50},
+}
+RECIDIVIST_DISPLACEMENT = {
+    1: {"Orange": 1, "Red": 2},
+    2: {"Orange": 2, "Red": 3},
+    3: {"Orange": 3, "Red": 4},
+}
+RECIDIVIST_CONSEQUENCES = {
+    1: "Standard ETP contribution",
+    2: "Mandatory front office review by Competition Committee",
+    3: "Automatic investigation trigger + ownership governance review",
+}
+
 
 @st.cache_data
 def load_all_case_data():
@@ -146,6 +164,41 @@ for pos in range(1, 15):
         key=f"cls_{pos}",
     )
 
+# ── Recidivist escalation (proposed) ────────────────────────────────────
+st.markdown("---")
+st.subheader("Recidivist Escalation (Proposed)")
+st.markdown("""
+*These measures are suggestive design proposals intended to encourage
+outside-the-box thinking about cross-season enforcement. They are not
+finalized policy.*
+
+Teams flagged Orange or Red in **consecutive seasons** face escalating
+penalties. Toggle this on to model the compounding effect.
+""")
+
+enable_recidivist = st.checkbox("Enable recidivist escalation", value=False)
+
+team_offense_year = {}
+if enable_recidivist:
+    st.markdown("Set how many consecutive seasons each flagged team has been Orange/Red:")
+    rec_cols = st.columns(7)
+    for pos in range(1, 15):
+        cls = team_classifications[pos]
+        if cls in ("Orange", "Red"):
+            col_idx = (pos - 1) % 7
+            team_offense_year[pos] = rec_cols[col_idx].selectbox(
+                f"#{pos} offense year",
+                [1, 2, 3],
+                index=0,
+                key=f"recid_{pos}",
+                help="1 = first offense, 2 = second consecutive, 3+ = third consecutive",
+            )
+        else:
+            team_offense_year[pos] = 0
+else:
+    for pos in range(1, 15):
+        team_offense_year[pos] = 1 if team_classifications[pos] in ("Orange", "Red") else 0
+
 # ── Compute ETP scenario ────────────────────────────────────────────────
 st.markdown("---")
 st.subheader("Simulation Results")
@@ -179,16 +232,25 @@ results = []
 for pos in range(1, 15):
     cls = team_classifications[pos]
     base_combos = LOTTERY_COMBINATIONS[pos]
-    reduction_pct = COMBINATION_REDUCTION[cls]
+    offense_yr = team_offense_year.get(pos, 0)
+
+    if enable_recidivist and cls in ("Orange", "Red") and offense_yr >= 2:
+        yr_key = min(offense_yr, 3)  # cap at 3
+        reduction_pct = RECIDIVIST_REDUCTION[yr_key][cls]
+        displacement = RECIDIVIST_DISPLACEMENT[yr_key][cls]
+    else:
+        reduction_pct = COMBINATION_REDUCTION[cls]
+        displacement = POSITION_DISPLACEMENT[cls]
+
     forfeited = round(base_combos * reduction_pct)
     remaining = base_combos - forfeited
-    displacement = POSITION_DISPLACEMENT[cls]
     effective_pos = min(pos + displacement, 14)
 
     total_forfeited += forfeited
     results.append({
         "Pos": pos,
         "Classification": cls,
+        "Consec. Yr": offense_yr if cls in ("Orange", "Red") else "—",
         "Base Combos": base_combos,
         "Reduction": f"-{reduction_pct:.0%}",
         "Forfeited": forfeited,
@@ -334,4 +396,32 @@ with st.expander("Collusion forfeiture (nuclear deterrent)"):
     - All involved teams forfeit **all draft selections** for **3 years**
     - All involved front office personnel face discipline up to lifetime bans
     - Forfeited picks distributed through ETP to top-SP teams
+    """)
+
+with st.expander("Recidivist escalation (proposed)"):
+    st.markdown("""
+    *This is a suggestive design proposal intended to encourage outside-the-box
+    thinking about systemic enforcement — not finalized policy.*
+
+    Teams classified Orange or Red in **consecutive seasons** face escalating
+    penalties that transform tanking from a repeatable strategy into a
+    depreciating asset:
+
+    | Consecutive Seasons | Orange Reduction | Red Reduction | Orange Disp. | Red Disp. | Additional Consequence |
+    |---|---|---|---|---|---|
+    | 1st (baseline) | −15% | −30% | −1 | −2 | Standard ETP contribution |
+    | 2nd consecutive | −25% | −40% | −2 | −3 | Mandatory Competition Committee review |
+    | 3rd consecutive | −35% | −50% | −3 | −4 | Investigation trigger + ownership review |
+
+    **Why it compounds multiplicatively:** A team in its 2nd consecutive Red
+    season faces 40% combination reduction (vs. 30%), near-zero SP from the
+    prior tank season (50% decay on already-depleted SP), continued SSL
+    ineligibility, and increased ETP exposure from the larger forfeiture pool.
+
+    **Open design questions:**
+    - Does the counter reset after one Green season, or require two?
+    - Should Yellow count toward the consecutive-season counter?
+    - Should the escalation curve be linear or exponential?
+    - Does the counter follow the franchise or the decision-makers across
+      ownership changes?
     """)
