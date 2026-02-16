@@ -17,6 +17,16 @@ from tii.case_prefs import is_pinned, is_hidden, set_pref
 from tii.cases_store import add_dynamic_case
 from tii.team_lookup import lookup_team
 
+# Compute pipeline (local mode)
+from tii.compute.elimination import compute_elimination_date
+from tii.compute.btca import compute_btca
+from tii.compute.sas import compute_sas
+from tii.compute.nrci import compute_nrci
+from tii.compute.ris import compute_ris
+from tii.compute.supplemental import compute_supplemental
+from tii.compute.composite import compute_composite
+from tii.ingest.historical import ingest_historical_standings
+
 # Try SQLite cache first (local dev), fall back to JSON exports (Streamlit Cloud)
 COMPUTED_DIR = Path(__file__).resolve().parent.parent / "data" / "computed"
 try:
@@ -30,6 +40,18 @@ st.title("🏀 Tanking Integrity Index — Calibration Dashboard")
 RUN_MODE = os.getenv("RUN_MODE", "local").strip().lower()
 IS_LOCAL_MODE = RUN_MODE == "local"
 IS_CLOUD_MODE = RUN_MODE == "cloud"
+
+def compute_case(cid: str):
+    """Compute all component metrics for a case (stores results in cache)."""
+    ingest_historical_standings()
+    compute_elimination_date(cid)
+    compute_sas(cid)
+    compute_nrci(cid)
+    compute_ris(cid)
+    compute_btca(cid)
+    compute_supplemental(cid)
+    compute_composite(cid)
+
 
 # Local-only: allow adding team+season cases (Cloud should be read-only)
 if IS_LOCAL_MODE:
@@ -51,7 +73,7 @@ if IS_LOCAL_MODE:
                 placeholder="Brandon",
             )
 
-        cbtn1, cbtn2, cbtn3 = st.columns([1, 1, 4])
+        cbtn1, cbtn2, cbtn3 = st.columns([1, 1, 1])
 
         def _add_case_only():
             t = lookup_team(team_input)
@@ -85,6 +107,28 @@ if IS_LOCAL_MODE:
             st.cache_data.clear()
             st.rerun()
 
+        def _add_ingest_compute():
+            t = lookup_team(team_input)
+            cid = add_dynamic_case(
+                team_abbr=t["abbreviation"],
+                team_id=t["id"],
+                team_name=t["full_name"],
+                season=season_input,
+                added_by=added_by or None,
+            )
+
+            from tii.ingest.team_season import ingest_case
+
+            with st.spinner(f"Ingesting {cid}..."):
+                ingest_case(cid, force=False)
+
+            with st.spinner(f"Computing metrics for {cid}..."):
+                compute_case(cid)
+
+            st.success(f"Ingest + compute complete: {cid}")
+            st.cache_data.clear()
+            st.rerun()
+
         with cbtn1:
             if st.button("Add case"):
                 if not team_input.strip() or not season_input.strip():
@@ -99,8 +143,15 @@ if IS_LOCAL_MODE:
                 else:
                     _add_and_ingest()
 
+        with cbtn3:
+            if st.button("Add + ingest + compute"):
+                if not team_input.strip() or not season_input.strip():
+                    st.error("Team and season are required")
+                else:
+                    _add_ingest_compute()
+
         st.caption(
-            "Cloud demo mode is read-only. Run locally (RUN_MODE=local) to add/ingest new seasons."
+            "Cloud demo mode is read-only. Run locally (RUN_MODE=local) to add/ingest/compute new seasons."
         )
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -568,7 +619,11 @@ filtered_df = filtered_df.head(max_rows)
 st.dataframe(
     filtered_df.style.apply(
         lambda row: [
-            "background-color: #d4edda" if row["Match"] == "✅" else "background-color: #f8d7da"
+            (
+                "background-color: #d4edda; color: #111;"
+                if row["Match"] == "✅"
+                else "background-color: #f8d7da; color: #111;"
+            )
         ]
         * len(row),
         axis=1,
@@ -591,8 +646,8 @@ selected_case = st.selectbox(
 )
 
 if selected_case:
-    # Pin/hide controls
-    cpin1, cpin2, cpin3 = st.columns([1, 1, 6])
+    # Pin/hide/compute controls
+    cpin1, cpin2, cpin3, cpin4 = st.columns([1, 1, 1, 5])
     with cpin1:
         if st.button("📌 Pin" if not is_pinned(selected_case) else "📍 Unpin"):
             set_pref(selected_case, "pinned", not is_pinned(selected_case))
@@ -600,6 +655,12 @@ if selected_case:
     with cpin2:
         if st.button("🙈 Hide"):
             set_pref(selected_case, "hidden", True)
+            st.rerun()
+    with cpin3:
+        if IS_LOCAL_MODE and st.button("⚙️ Compute"):
+            with st.spinner(f"Computing metrics for {selected_case}..."):
+                compute_case(selected_case)
+            st.cache_data.clear()
             st.rerun()
 
     d = all_data[selected_case]
