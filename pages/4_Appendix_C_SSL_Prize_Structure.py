@@ -23,6 +23,7 @@ SSL_TIERS = {
     "Tier 1 (Top SP)": {
         "sp_threshold": "Top 5 SP teams",
         "draft_assets": "1 additional 2nd-round pick + draft swap rights on own 1st",
+        "etp_eligibility": "First priority for ETP supplemental picks (potential 1st-round talent)",
         "cap_credits": "$3M cap elasticity credit (usable against luxury tax or as trade exception)",
         "trade_flex": "Expanded trade exception window (+60 days); relaxed matching salary (125% + $250K instead of 125% + $100K)",
         "color": "#d4edda",
@@ -30,6 +31,7 @@ SSL_TIERS = {
     "Tier 2 (High SP)": {
         "sp_threshold": "SP rank 6-10",
         "draft_assets": "1 additional 2nd-round pick",
+        "etp_eligibility": "Eligible for ETP supplemental picks (after Tier 1 teams select)",
         "cap_credits": "$1.5M cap elasticity credit",
         "trade_flex": "Expanded trade exception window (+30 days)",
         "color": "#d4f5d4",
@@ -37,6 +39,7 @@ SSL_TIERS = {
     "Tier 3 (Qualifying SP)": {
         "sp_threshold": "SP rank 11-15 (above median)",
         "draft_assets": "Conditional 2nd-round swap rights",
+        "etp_eligibility": "Ineligible (must be top quartile SP)",
         "cap_credits": "$500K cap elasticity credit",
         "trade_flex": "Standard trade rules (no enhancement)",
         "color": "#fff3cd",
@@ -44,6 +47,7 @@ SSL_TIERS = {
     "Below Threshold": {
         "sp_threshold": "SP rank 16-30",
         "draft_assets": "None",
+        "etp_eligibility": "Ineligible",
         "cap_credits": "None",
         "trade_flex": "Standard trade rules",
         "color": "#f8d7da",
@@ -154,10 +158,12 @@ st.subheader("SSL Reward Tiers")
 
 for tier_name, tier_info in SSL_TIERS.items():
     with st.expander(f"**{tier_name}** — {tier_info['sp_threshold']}"):
-        c1, c2, c3 = st.columns(3)
+        c1, c2 = st.columns(2)
         c1.markdown(f"**Draft Assets:**\n\n{tier_info['draft_assets']}")
-        c2.markdown(f"**Cap Credits:**\n\n{tier_info['cap_credits']}")
-        c3.markdown(f"**Trade Flexibility:**\n\n{tier_info['trade_flex']}")
+        c2.markdown(f"**ETP Supplemental Picks:**\n\n{tier_info['etp_eligibility']}")
+        c3, c4 = st.columns(2)
+        c3.markdown(f"**Cap Credits:**\n\n{tier_info['cap_credits']}")
+        c4.markdown(f"**Trade Flexibility:**\n\n{tier_info['trade_flex']}")
 
 # ── Cap elasticity details ──────────────────────────────────────────────
 st.markdown("---")
@@ -204,6 +210,50 @@ st.markdown("""
 - Odds weighted by SP accumulation (higher SP = better odds)
 - Diminishing returns: teams in top 5 SP for 3+ consecutive years get 10%
   odds reduction per additional year to prevent runaway advantages
+""")
+
+# ── ETP supplemental pick integration ──────────────────────────────────
+st.markdown("---")
+st.subheader("🎯 ETP Supplemental Picks — The Marquee Prize")
+
+st.markdown("""
+The single most valuable SSL benefit is access to **ETP supplemental picks** —
+first-round talent redirected from teams caught tanking. This is the mechanism
+that makes sustained competitive integrity genuinely transformative for a
+franchise's roster construction.
+
+**How it works:**
+
+When the **Emerging Talent Pool (ETP)** activates (see Appendix D), it
+participates in the standard NBA Draft Lottery as its own entity. If an ETP
+combination is drawn during any of the four lottery drawings (picks 1–4),
+that pick is **redirected from the team that would have received it** into
+a supplemental draft available exclusively to top-SP teams.
+
+| Step | What Happens |
+|------|-------------|
+| 1. ETP activates | 3+ teams classified Orange/Red triggers ETP |
+| 2. Forfeitures pooled | Combination reductions from penalized teams feed the ETP pool |
+| 3. Lottery drawing | ETP combinations participate in the standard lottery alongside all 14 teams |
+| 4. ETP combination drawn | The corresponding pick (1st–4th) is redirected to the supplemental draft |
+| 5. Supplemental selection | Top-quartile SP teams select in SP rank order (#1 SP picks first) |
+| 6. Rookie scale applies | Supplemental picks carry standard rookie contract obligations |
+
+**Eligibility requirements:**
+- Must be in the **top quartile of SP** (roughly top 7-8 teams league-wide)
+- Must be classified **Green** (Orange/Red teams are categorically ineligible)
+- Must not have acquired draft assets from a Red team in the past 24 months
+  (tainted network exclusion)
+
+**Maximum redirection cap:** No more than **2 picks** can be redirected into the
+ETP in any single draft. This prevents catastrophic disruption to the draft
+while maintaining meaningful enforcement.
+
+**Why this matters:** In a severe tanking year (Tier 2+), there is a
+**23–34% probability** that at least one top-4 pick is redirected. A
+high-SP team could receive a lottery-caliber prospect simply by
+demonstrating organizational integrity. This is the framework's most
+powerful positive incentive.
 """)
 
 # ── Trade flexibility details ───────────────────────────────────────────
