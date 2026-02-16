@@ -20,9 +20,13 @@ st.set_page_config(
 
 # ── Define pages ─────────────────────────────────────────────────────────
 pages = {
+    "Plan": [
+        st.Page("pages/6_Plan_Overview.py",
+                title="Stewardship Reform Plan", icon="📄", default=True),
+    ],
     "Appendix A": [
         st.Page("pages/0_TII_Calibration_Dashboard.py",
-                title="TII Calibration Dashboard", icon="🏀", default=True),
+                title="TII Calibration Dashboard", icon="🏀"),
     ],
     "Framework Appendices": [
         st.Page("pages/3_Appendix_B_SP_Scoring_Matrix.py",
