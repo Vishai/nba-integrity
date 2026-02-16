@@ -89,6 +89,7 @@ if IS_LOCAL_MODE:
             st.rerun()
 
         def _add_and_ingest():
+            """Legacy button: ingest *and compute* so the table isn't all zeros."""
             t = lookup_team(team_input)
             cid = add_dynamic_case(
                 team_abbr=t["abbreviation"],
@@ -103,7 +104,10 @@ if IS_LOCAL_MODE:
             with st.spinner(f"Ingesting {cid}..."):
                 ingest_case(cid, force=False)
 
-            st.success(f"Ingest complete: {cid}")
+            with st.spinner(f"Computing metrics for {cid}..."):
+                compute_case(cid)
+
+            st.success(f"Ingest + compute complete: {cid}")
             st.cache_data.clear()
             st.rerun()
 
@@ -137,14 +141,14 @@ if IS_LOCAL_MODE:
                     _add_case_only()
 
         with cbtn2:
-            if st.button("Add + ingest"):
+            if st.button("Add + ingest + compute"):
                 if not team_input.strip() or not season_input.strip():
                     st.error("Team and season are required")
                 else:
                     _add_and_ingest()
 
         with cbtn3:
-            if st.button("Add + ingest + compute"):
+            if st.button("Add + ingest + compute (alt)"):
                 if not team_input.strip() or not season_input.strip():
                     st.error("Team and season are required")
                 else:
